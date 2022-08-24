@@ -90,7 +90,6 @@ const toggleNav = ref(false);
 
 const {nav} = defineProps(["nav"]);
 
-console.log(nav)
 
 const toggleOff = () => {
   toggleNav.value = true;
