@@ -34,12 +34,12 @@
             />
         </div>
         <MiscMessage :class = "message.content ? `visible` : `invisible`" :type="message.type">{{ message.content }}</MiscMessage>
-        <a href = "/apply" class = "decoration-transparent text-blue-400">Not a volunteer yet? Apply!</a>
+        <a href = "/login" class = "decoration-transparent text-blue-400">Already have an account? Sign in!</a>
         <button
             type="submit"
             class="max-w-md mx-auto text-white rounded-xl p-4 w-full bg-blue-400 transition duration-500 ease-in-out transform hover:-translate-y-1"
         >
-            Login / உள்நுழை
+            Apply / விண்ணப்பிக்க
         </button>
     </form>
 </template>
