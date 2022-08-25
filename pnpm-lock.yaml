@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@nekooftheabyss/lala': ^3.1.4
   '@nuxtjs/tailwindcss': ^5.3.2
   '@pinia/nuxt': ^0.4.1
   '@vueuse/core': ^9.1.1
@@ -10,6 +11,7 @@ specifiers:
   pinia: ^2.0.20
 
 dependencies:
+  '@nekooftheabyss/lala': 3.1.4
   aos: 2.3.4
 
 devDependencies:
@@ -440,6 +442,10 @@ packages:
       - encoding
       - supports-color
     dev: true
+
+  /@nekooftheabyss/lala/3.1.4:
+    resolution: {integrity: sha512-XXx+NnHxQyVqC13QNYWAiwFcuKJrKTZewMev4GDsHvlAd1YPDpvc+oSLMSfqGC6Q7fRD5TO8G+SH3+EissSq6A==}
+    dev: false
 
   /@netlify/functions/1.2.0:
     resolution: {integrity: sha512-zCOJPoZQLv4ISHjyBS7asqzR6Y9NU+Vb0VKYDD0xUwYmReMhLTDchjGMkt5x0Jk1EVnJwUvA29rGyQEj3tIgAA==}

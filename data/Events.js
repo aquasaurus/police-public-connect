@@ -11,7 +11,7 @@ export default [
       title: {
         en: "International Women's Day Celebration - Chennai Central Railway Station",
         ta:
-          "Women's Day Celebration",
+          "சென்னை சென்ட்ரல் ரயில் நிலையத்தில் மகளிர் தின கொண்டாட்டம்.",
       },
       images: 2,
     },
@@ -57,7 +57,7 @@ export default [
     },
     {
       title: {
-        en: "how to manage traffic congestion - Pukkadai Police Station - Students with DSP Mohan Singh Joswa and Inspector Thalavaiswamy",
+        en: "How to manage traffic congestion - Pukkadai Police Station - Students with DSP Mohan Singh Joswa and Inspector Thalavaiswamy",
         ta:
           "பூக்கடை காவல் நிலையத்தில் மாணவர்களுக்கு போக்குவரத்து நெரிசலை சீர் செய்வது எப்படி என்று டிஎஸ்பி மோகன் சிங் ஜோஸ்வா மற்றும் ஆய்வாளர் தளவாய்சாமி அவர்களுடன் மாணவர்கள்",
       },

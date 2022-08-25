@@ -1,15 +1,15 @@
 <template>
-  <header :class="`flex flex-row w-full z-30 relative bg-gray-800 relative`">
+  <header :class="`flex flex-row w-full z-50 relative bg-gray-800`">
     <div :class="`flex flex-row w-full items-center p-4`">
       <div :class="`flex flex-row items-center justify-center lg:hidden`">
         <button
           :class="`
-                      inline-flex
-                      items-center
-                      justify-center
-                      p-2
-                      rounded-md
-                      text-white focus:outline-none
+            inline-flex
+            items-center
+            justify-center
+            p-2
+            rounded-md
+          text-white focus:outline-none
                     `"
           @click="toggleBoth"
         >
@@ -63,7 +63,7 @@
         <a
           v-for="x in navList"
           :class="`hover:text-blue-300 transition duration-500 px-4 lg:px-1`"
-          href="x.route"
+          :href="x.route"
           :key="x.key"
         >
           {{ x.name }}
@@ -76,7 +76,7 @@
 <script setup>
 const navOpen = ref(false);
 
-const {navList} = defineProps(["navList"]);
+const { navList } = defineProps(["navList"]);
 
 const toggleOff = () => {
   navOpen.value = true;

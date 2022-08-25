@@ -2,14 +2,12 @@
   <div
     class="
       flex flex-col
-      min-h-screen
+      min-h-screen scroll-smooth
       font-montserrat
       text-lg
       tracking-wide
       text-gray-900
       bg-white
-      dark:font-normal
-      kurobg
     "
   >
     <LayoutHeader :nav-list="Navigation" />
