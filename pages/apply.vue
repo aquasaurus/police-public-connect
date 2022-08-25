@@ -20,6 +20,20 @@
                 required
             />
             <label
+                for="Gender"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >Gender</label
+            >
+            <input
+                type="text"
+                name="user_sex"
+                id="Gender"
+                placeholder="பாலினம்"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
                 for="user_password"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"
                 >Password</label
