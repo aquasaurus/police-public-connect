@@ -103,7 +103,7 @@
             `     In 2018, Dr. C Sailendrababu (IPS), Director of Police, unveiled the GRP app to assist passengers in Chennai Central Railway Station, and awareness roadshow was also conducted. Then our organization had distributed the GRP app to people in Central Egmore, Perambur, Tiruvannamalai, and all railway stations and also began conducting public service in Ambathur, Villivakkam, and other parts of the city.  `,
             `     With the continued gaining of awareness in public and traction for the need to be crime free society, we also launched an initiative to work closely with the colleges in Chennai for the students to participate as volunteers in our association to expand our services to assist the department of police.`,
             `     Several colleges in the city are coming forward to offer support to our efforts with their students ready to join our initiative as volunteer support. `,
-            `     In 2022, we launched a website and a mobile application for the benefit of volunteers and to report crime by the public wherever it happens for our volunteers to pick up and rush to the spot to provide that initial handholding support to the victim and understanding the issue and help trace the culprits for the police to nab them on time.`,
+            `   In 2022, we launched a website and a mobile application for the benefit of volunteers and to report crime by the public wherever it happens for our volunteers to pick up and rush to the spot to provide that initial handholding support to the victim and understanding the issue and help trace the culprits for the police to nab them on time.`,
           ]"
         />
       </div>
@@ -380,7 +380,7 @@
         notified and will act accordingly.</MiscMessage
       >
       <a
-        href="/complaint"
+        href="/complain"
         class="
           rounded-2xl
           bg-gray-600 text-center
