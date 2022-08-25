@@ -55,8 +55,8 @@
           key="logo"
         >
           <img
-            src="/logo_512.webp"
-            :class="`w-12 rounded-full`"
+            src="/ppc_logo.webp"
+            :class="`w-16 rounded-full`"
             alt="Police Public Connect"
           />
         </a>
