@@ -67,21 +67,14 @@
                 required
                 >Gender</label
             >
-            {{ gender }}
-            <select 
-                v-model="gender"
+            <input
                 type="text"
                 name="user_sex"
                 id="Gender"
                 placeholder="பாலினம்"
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
-            >
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Other">Other</option>
-                <option value="Not to say">Not to say</option>
-            </select>
+            />
             <label
                 for="user_address"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"
