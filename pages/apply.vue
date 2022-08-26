@@ -43,6 +43,8 @@
                 type="text"
                 name="Phone"
                 id="user_phone"
+                pattern="^(?:\+91)?[0-9]{10}$"
+                title="Phone number should be a ten-digit number"
                 placeholder="தொலைபேசி எண்"
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
@@ -61,20 +63,7 @@
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
             />
-            <label
-                for="Gender"
-                class="font-semibold text-base uppercase text-center lg:text-left w-full"
-                required
-                >Gender</label
-            >
-            <input
-                type="text"
-                name="user_sex"
-                id="Gender"
-                placeholder="பாலினம்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
-                required
-            />
+            
             <label
                 for="user_address"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"

@@ -144,7 +144,7 @@
           lg:hover:scale-110
         "
       >
-        <span class="text-3xl font-semibold">Vision</span>
+        <span class="text-3xl text-orange-400 font-semibold">Vision</span>
         <span class="text-justify"
           >To build a crime free society for India to flourish and have a great
           place for all of us to lead happy lives.</span
@@ -152,7 +152,7 @@
       </div>
       <div
         class="
-          bg-gray-500
+          bg-gray-600
           rounded-xl
           text-center
           lg:text-left
@@ -168,7 +168,7 @@
           lg:hover:scale-110
         "
       >
-        <span class="text-3xl font-semibold">Mission</span>
+        <span class="text-3xl text-orange-400 font-semibold">Mission</span>
         <span class="text-justify">
           <span>To work under the guidance of police department by</span>
           <ul
@@ -280,7 +280,7 @@
       <div
         class="flex flex-col space-y-4 max-w-7xl mx-auto py-12 px-12 items-left"
       >
-        <div class="text-4xl mx-auto text-center text-black uppercase">
+        <div class="text-4xl font-semibold mx-auto text-center text-black uppercase">
           Leaders
         </div>
       </div>
