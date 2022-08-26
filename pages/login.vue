@@ -51,7 +51,7 @@
         content: "",
     });
 
-    function validateForm(e: SubmitEvent) {
+    async function validateForm(e: SubmitEvent) {
         e.preventDefault();
         const formData = new FormData(loginForm.value);
         const accountInfo = {
@@ -62,6 +62,13 @@
             return anErrorOccured(
                 "Please check whether all data has been entered properly."
             );
+        const auth = await fetch("http://localhost:8000/auth", {method: "POST", body: JSON.stringify({user_email: accountInfo.user_email, user_password: accountInfo.user_password})})
+        if(auth.status===200) {
+            const {token} = await auth.json()
+            localStorage.setItem("ppc_token", token);
+            window.location.href="/dashboard"
+        }
+        else return anErrorOccured("Invalid credentials.")
     }
     function anErrorOccured(msg: string) {
         message.value.content = msg;

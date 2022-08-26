@@ -5,8 +5,8 @@
                 class="flex flex-row items-center rounded-t-xl border-b-2 border-blue-400 px-4 py-6 justify-between cursor-pointer"
                 @click="() => (userOpen = !userOpen)"
             >
-                <span>{{userInfo.user_name}} #{{ userInfo.user_id }}</span>
-<button
+                <span>{{ userInfo.user_name }} #{{ userInfo.user_id }}</span>
+                <button
                     :class="`stroke-2 stroke-black transition duration-500 ease-in-out transform ${
                         userOpen ? `rotate-180` : `rotate-0`
                     }`"
@@ -88,9 +88,18 @@
                     </div>
                     <div class="p-2 flex flex-col items-center">
                         <button
+                            v-if="userInfo.user_level === 1"
                             class="p-2 text-center bg-blue-400 text-white rounded-xl transition duration-500 ease-in-out transform hover:-translate-y-1"
+                            @click="approveUser"
                         >
                             Approve User
+                        </button>
+                        <button
+                            v-else-if="userInfo.user_level === 2"
+                            class="p-2 text-center bg-blue-400 text-white rounded-xl transition duration-500 ease-in-out transform hover:-translate-y-1"
+                            @click="deactivateUser"
+                        >
+                            Deactivate User
                         </button>
                     </div>
                 </div>
@@ -103,4 +112,24 @@
     const userOpen = ref(false);
 
     const { userInfo } = defineProps({ userInfo: Object });
+
+    async function approveUser() {
+        const res = await fetch(`http://localhost:8000/u/${userInfo.user_id}/verify`, {
+            method: "GET",
+            headers: { Authorization: localStorage.getItem("ppc_token") },
+        });
+        if (res.status == 200) {
+            history.go(0);
+        }
+    }
+
+    async function deactivateUser() {
+        const res = await fetch(`http://localhost:8000/u/${userInfo.user_id}/unverify`, {
+            method: "GET",
+            headers: { Authorization: localStorage.getItem("ppc_token") },
+        });
+        if (res.status == 200) {
+            history.go(0);
+        }
+    }
 </script>

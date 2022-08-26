@@ -21,6 +21,15 @@
 </style>
 
 <script setup>
+definePageMeta({
+  middleware: ["auth"]
+})
+
+onMounted(() => {
+  if(!localStorage.getItem("ppc_token")) {
+    window.location.href="/login"
+  }
+})
 const FabNav = [
   {
     name: "Home",

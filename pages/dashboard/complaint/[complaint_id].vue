@@ -61,17 +61,17 @@
                                         a.comment_created.getTime() -
                                         b.comment_created.getTime()
                                 )
-                                .reverse()"
+                                "
                             :key="comment.comment_id"
                             class=""
                         >
                             <div
-                                :title="String(comment.comment_user.user_id)"
+                                :title="String(comment.comment_user?.user_id)"
                                 class="p-1 flex flex-row items-center space-x-4"
                             >
                                 <span
                                     class="font-semibold text-base uppercase"
-                                    >{{ comment.comment_user.user_name }}</span
+                                    >{{ comment.comment_user?.user_name }}</span
                                 ><span class="text-gray-400 text-sm">{{
                                     comment.comment_created
                                         .toISOString()
@@ -83,11 +83,21 @@
                                 {{ comment.comment_content }}
                             </div>
                         </div>
-                        <div class = "p-2">
-                            <input type = "text" class = "p-2 text-sm bg-gray-600 border border-blue-400" v-model="enteringComment" placeholder="Add comment" />
+                        <div class="p-2">
+                            <input
+                                type="text"
+                                class="p-2 text-sm bg-gray-600 border border-blue-400"
+                                v-model="enteringComment"
+                                placeholder="Add comment"
+                            />
                         </div>
-                       <div class = "p-2">
-                            <button class = "bg-blue-400 p-2 text-sm" @click="addComment">Add Comment</button>
+                        <div class="p-2">
+                            <button
+                                class="bg-blue-400 p-2 text-sm"
+                                @click="addComment"
+                            >
+                                Add Comment
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -97,33 +107,66 @@
 </template>
 
 <script setup lang="ts">
-const enteringComment = ref("")
+    definePageMeta({
+        layout: "dashboard",
+    });
+
+    const enteringComment = ref("");
+    const complaintInfo = ref({
+        complaint_id: 1,
+        complaint_name: "Fetching",
+        complaint_phone: "Fetching",
+        complaint_content: "Fetching",
+        complaint_status: 3,
+        complaint_attendee: 1,
+        complaint_created: new Date("1999-12-31"),
+        complaint_comments: [],
+    });
     const route = useRoute();
 
     const complaint_id = route.params.complaint_id as string;
 
-    const complaintInfo = {
-        complaint_id: 1,
-        complaint_name: "Raju",
-        complaint_phone: "6767676767",
-        complaint_content: "Missing Money",
-        complaint_status: 2,
-        complaint_attendee: "V450",
-        complaint_created: new Date("2022-04-19"),
-        complaint_comments: [
+    const res = await fetch(
+        `http://localhost:8000/complaints/get/${complaint_id}`,
+        { headers: { Authorization: localStorage.getItem("ppc_token") } }
+    );
+    if (res.status == 200) {
+        const cInfo = await res.json();
+        console.log(cInfo)
+        complaintInfo.value = cInfo;
+        complaintInfo.value.complaint_created = new Date(
+            complaintInfo.value.complaint_created
+        );
+        complaintInfo.value.complaint_comments =
+            complaintInfo.value.complaint_comments.map(
+                (x) => ({comment_user: x.comment_user, comment_created: new Date(x.comment_created), comment_content: x.comment_content})
+            );
+    } else if (res.status == 404) {
+        complaintInfo.value = {
+            complaint_id: 1,
+            complaint_name: "Not Found",
+            complaint_phone: "Not Found",
+            complaint_content: "Not Found",
+            complaint_status: 3,
+            complaint_attendee: 1,
+            complaint_created: new Date("1999-12-31"),
+            complaint_comments: [],
+        };
+    }
+
+    async function addComment() {
+        const commentVal = enteringComment.value;
+        if (!commentVal) return;
+        const res = await fetch(
+            `http://localhost:8000/complaints/comments/${complaint_id}`,
             {
-                comment_content: "Help asap",
-                comment_created: new Date("2022-04-19"),
-                comment_user: {
-                    user_id: 8,
-                    user_name: "Raja",
-                },
-                comment_id: 1,
-            },
-        ],
-    };
-
-    function addComment() {
-
+                method: "POST",
+                body: JSON.stringify({ comment: commentVal }),
+                headers: { Authorization: localStorage.getItem("ppc_token") },
+            }
+        );
+        if (res.status == 200) {
+            history.go(0);
+        }
     }
 </script>

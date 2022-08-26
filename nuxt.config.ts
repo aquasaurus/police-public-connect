@@ -22,6 +22,8 @@ export default defineNuxtConfig({
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
   },
+  
+  ssr: false,
     css: ["@/assets/transition.css"],
     modules: [
         "@nuxtjs/tailwindcss",
