@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@nekooftheabyss/lala": "^3.1.4",
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "pnpm": "^7.9.5"
   }
 }

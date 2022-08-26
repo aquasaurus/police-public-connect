@@ -6,6 +6,20 @@
     >
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <label
+                for="user_name"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >Name</label
+            >
+            <input
+                type="text"
+                name="Name"
+                id="user_name"
+                placeholder="பெயர்"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
                 for="user_email"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"
                 required
@@ -20,6 +34,34 @@
                 required
             />
             <label
+                for="user_phone"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >Phone Number</label
+            >
+            <input
+                type="text"
+                name="Phone"
+                id="user_phone"
+                placeholder="தொலைபேசி எண்"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
+                for="user_date_of_birth"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >Date of Birth</label
+            >
+            <input
+                type="Date"
+                name="DOB"
+                id="user_date_of_birth"
+                placeholder="பிறந்த தேதி"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
                 for="Gender"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"
                 required
@@ -30,6 +72,62 @@
                 name="user_sex"
                 id="Gender"
                 placeholder="பாலினம்"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
+                for="user_address"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >Address</label
+            >
+            <input
+                type="text"
+                name="Address"
+                id="user_address"
+                placeholder="முகவரி"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
+                for="user_city"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >City</label
+            >
+            <input
+                type="text"
+                name="City"
+                id="user_city"
+                placeholder="நகரம்"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
+                for="user_pincode"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >Pincode</label
+            >
+            <input
+                type="text"
+                name="Pincode"
+                id="user_pincode"
+                placeholder="அஞ்சல் குறியீடு"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
+                for="user_aadhar"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >Aadhar Number</label
+            >
+            <input
+                type="text"
+                name="Aadhar"
+                id="user_aadhar"
+                placeholder="ஆதார் எண்"
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
             />
