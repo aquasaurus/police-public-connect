@@ -49,6 +49,60 @@
                                 userInfo.user_phone
                             }}</span>
                         </div>
+                        </div>
+                        <div class="flex flex-col space-y-1 break-words">
+                            <span class="font-semibold text-lg uppercase"
+                                >Email ID</span
+                            >
+                            <span class="text-base">{{
+                                userInfo.user_email
+                            }}</span>
+                        </div>
+                        </div>
+                        <div class="flex flex-col space-y-1 break-words">
+                            <span class="font-semibold text-lg uppercase"
+                                >Date of Birth</span
+                            >
+                            <span class="text-base">{{
+                                userInfo.user_date_of_birth
+                            }}</span>
+                        </div>
+                        </div>
+                        <div class="flex flex-col space-y-1 break-words">
+                            <span class="font-semibold text-lg uppercase"
+                                >Address</span
+                            >
+                            <span class="text-base">{{
+                                userInfo.user_address
+                            }}</span>
+                        </div>
+                        </div>
+                        <div class="flex flex-col space-y-1 break-words">
+                            <span class="font-semibold text-lg uppercase"
+                                >City</span
+                            >
+                            <span class="text-base">{{
+                                userInfo.user_city
+                            }}</span>
+                        </div>
+                        </div>
+                        <div class="flex flex-col space-y-1 break-words">
+                            <span class="font-semibold text-lg uppercase"
+                                >Pincode</span
+                            >
+                            <span class="text-base">{{
+                                userInfo.user_pincode
+                            }}</span>
+                        </div>
+                        </div>
+                        <div class="flex flex-col space-y-1 break-words">
+                            <span class="font-semibold text-lg uppercase"
+                                >Aadhar Number</span
+                            >
+                            <span class="text-base">{{
+                                userInfo.user_aadhar
+                            }}</span>
+                        </div>
                         <!--
                             <div class="flex flex-col space-y-1 break-words">
                             <span class="font-semibold text-lg uppercase"

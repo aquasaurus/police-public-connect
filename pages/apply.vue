@@ -58,7 +58,7 @@
             <input
                 type="Date"
                 name="user_dob"
-                id="user_dob"
+                id="user_date_of_birth"
                 placeholder="பிறந்த தேதி"
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
