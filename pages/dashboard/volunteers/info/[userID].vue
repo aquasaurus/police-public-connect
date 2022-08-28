@@ -3,6 +3,9 @@
 </template>
 
 <script setup lang="ts">
+    definePageMeta({
+        layout: "dashboard",
+    });
     const route = useRoute();
 
     const user_id = route.params.userID as string;
@@ -12,7 +15,7 @@
             user_email: "Unknown@gmail.com",
             user_password: "Unknown",
             user_phone: "Unknown",
-            user_date_of_birth: new Date("1996-04-09"),
+            user_dob: new Date("1996-04-09"),
             user_sex: "F",
             user_id: "Unknown",
             user_address: "Unknown",

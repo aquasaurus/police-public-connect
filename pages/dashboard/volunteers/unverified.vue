@@ -29,7 +29,7 @@
             user_email: "Unknown@gmail.com",
             user_password: "Unknown",
             user_phone: "Unknown",
-            user_date_of_birth: new Date("1996-04-09"),
+            user_dob: new Date("1996-04-09"),
             user_sex: "F",
             user_id: "Unknown",
             user_address: "Unknown",

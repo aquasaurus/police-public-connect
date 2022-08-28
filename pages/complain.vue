@@ -40,14 +40,18 @@
                 >Describe your complaint</label
             >
             <textarea
-                id="complaint_id"
+                id="complaint_content"
                 name="complaint_content"
                 placeholder="உங்கள் புகாரை விவரிக்கவும்"
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
             />
         </div>
-        <MiscMessage :class = "message.content ? `visible` : `invisible`" :type="message.type">{{ message.content }}</MiscMessage>
+        <MiscMessage
+            :class="message.content ? `visible` : `invisible`"
+            :type="message.type"
+            >{{ message.content }}</MiscMessage
+        >
         <button
             type="submit"
             class="max-w-md mx-auto text-white rounded-xl p-4 w-full bg-blue-400 transition duration-500 ease-in-out transform hover:-translate-y-1"
@@ -64,18 +68,26 @@
         content: "",
     });
 
-    function validateForm(e: SubmitEvent) {
+    async function validateForm(e: SubmitEvent) {
         e.preventDefault();
         const formData = new FormData(complaintForm.value);
         const complaintInfo = {
+            complaint_content: formData.get("complaint_content"),
             complaint_name: formData.get("complaint_name"),
             complaint_phone: formData.get("complaint_phone"),
-            complaint_content: formData.get("complaint_content"),
         };
         if (Array.from(formData.values()).some((x) => !x))
             return anErrorOccured(
                 "Please check whether all data has been entered properly."
             );
+        const auth = await fetch("http://localhost:8000/complaints/new", {
+            method: "POST",
+            body: JSON.stringify(complaintInfo),
+        });
+        if (auth.status === 200) {
+            message.value.content = "Complaint Successful";
+            message.value.type = "success";
+        } else return anErrorOccured("Invalid credentials.");
     }
     function anErrorOccured(msg: string) {
         message.value.content = msg;

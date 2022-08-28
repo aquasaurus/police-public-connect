@@ -1,5 +1,5 @@
 <template>
-    <div class="p-4">
+    <div class="p-4 max-w-9xl mx-auto py-8">
         <div
             class="border-b-2 border-blue-400 text-2xl px-2 font-bold uppercase"
         >
@@ -29,7 +29,7 @@
                         complaintInfo.complaint_status === 1
                             ? "Open"
                             : complaintInfo.complaint_status === 2
-                            ? "Attended"
+                            ? `Attended by #${complaintInfo.complaint_attendee}`
                             : complaintInfo.complaint_status === 3
                             ? "Closed"
                             : complaintInfo.complaint_status === 4
@@ -43,6 +43,12 @@
                         complaintInfo.complaint_content
                     }}</span>
                 </div>
+                <button v-if = "complaintInfo.complaint_status === 1"
+                    class="p-2 text-center bg-blue-400 text-white rounded-xl transition duration-500 ease-in-out transform hover:-translate-y-1"
+                    @click="attend"
+                >
+                    Attend Complaint
+                </button>
             </div>
             <div class="p-2 flex flex-col items-center max-w-2xl">
                 <div class="bg-gray-700 text-white w-full">
@@ -55,13 +61,11 @@
                         class="flex flex-col space-y-4 max-h-[20rem] overflow-y-auto p-2"
                     >
                         <div
-                            v-for="comment in complaintInfo.complaint_comments
-                                .sort(
-                                    (a, b) =>
-                                        a.comment_created.getTime() -
-                                        b.comment_created.getTime()
-                                )
-                                "
+                            v-for="comment in complaintInfo.complaint_comments.sort(
+                                (a, b) =>
+                                    a.comment_created.getTime() -
+                                    b.comment_created.getTime()
+                            )"
                             :key="comment.comment_id"
                             class=""
                         >
@@ -132,15 +136,17 @@
     );
     if (res.status == 200) {
         const cInfo = await res.json();
-        console.log(cInfo)
+        console.log(cInfo);
         complaintInfo.value = cInfo;
         complaintInfo.value.complaint_created = new Date(
             complaintInfo.value.complaint_created
         );
         complaintInfo.value.complaint_comments =
-            complaintInfo.value.complaint_comments.map(
-                (x) => ({comment_user: x.comment_user, comment_created: new Date(x.comment_created), comment_content: x.comment_content})
-            );
+            complaintInfo.value.complaint_comments.map((x) => ({
+                comment_user: x.comment_user,
+                comment_created: new Date(x.comment_created),
+                comment_content: x.comment_content,
+            }));
     } else if (res.status == 404) {
         complaintInfo.value = {
             complaint_id: 1,
@@ -169,4 +175,17 @@
             history.go(0);
         }
     }
+    async function attend() {
+        const res = await fetch(
+            `http://localhost:8000/complaints/${complaint_id}/attend`,
+            {
+                method: "POST",
+                headers: { Authorization: localStorage.getItem("ppc_token") },
+            }
+        );
+        if (res.status == 200) {
+            history.go(0);
+        }
+    }
+    
 </script>

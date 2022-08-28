@@ -50,7 +50,7 @@
                 required
             />
             <label
-                for="user_date_of_birth"
+                for="user_dob"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"
                 required
                 >Date of Birth</label
@@ -58,7 +58,7 @@
             <input
                 type="Date"
                 name="user_dob"
-                id="user_date_of_birth"
+                id="user_dob"
                 placeholder="பிறந்த தேதி"
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
@@ -186,6 +186,9 @@
             user_pincode: formData.get("user_pincode"),
             user_aadhar: formData.get("user_aadhar"),
         };
+        if(accountInfo.user_password !== formData.get("confirm_password")) {
+            return anErrorOccured("Passwords don't match");
+        }
         if (Array.from(formData.values()).some((x) => !x))
             return anErrorOccured(
                 "Please check whether all data has been entered properly."
