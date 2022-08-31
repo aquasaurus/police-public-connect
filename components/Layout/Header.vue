@@ -1,5 +1,5 @@
 <template>
-  <header :class="`flex flex-row w-full z-50 relative bg-gray-800`">
+  <header :class="`flex flex-row w-full sticky top-0 z-50 relative bg-gray-800`">
     <div :class="`flex flex-row w-full items-center p-4`">
       <div :class="`flex flex-row items-center justify-center lg:hidden`">
         <button
@@ -68,7 +68,7 @@
         >
           {{ x.name }}
         </a>
-      </div>
+      </div>+
     </div>
   </header>
 </template>

@@ -63,7 +63,20 @@
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
             />
-
+            <label
+                for="user_"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >Blood Group</label
+            >
+            <input
+                type="text"
+                name="user_bloodgroup"
+                id="user_bloodgroup"
+                placeholder="இரத்த வகை"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
             <label
                 for="user_address"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"
@@ -117,6 +130,48 @@
                 name="user_aadhar"
                 id="user_aadhar"
                 placeholder="ஆதார் எண்"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
+                for="user_"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >Father Name</label
+            >
+            <input
+                type="text"
+                name="user_"
+                id="user_"
+                placeholder="தந்தையின் பெயர்"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
+                for="user_"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >Mother Name</label
+            >
+            <input
+                type="text"
+                name="user_"
+                id="user_"
+                placeholder="தாய் பெயர்"
+                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
+                for="user_"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                required
+                >Parent Phone Number</label
+            >
+            <input
+                type="text"
+                name="user_"
+                id="user_"
+                placeholder="பெற்றோர் தொலைபேசி எண்"
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
             />
