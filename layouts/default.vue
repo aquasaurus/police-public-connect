@@ -79,5 +79,10 @@ const Navigation = [
     route: `/#complaint`,
     key: `complaint`,
   },
+  {
+    name: 'Register',
+    route: '/#apply',
+    key: 'register',
+  },
 ];
 </script>
