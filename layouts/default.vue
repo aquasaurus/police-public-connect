@@ -81,7 +81,7 @@ const Navigation = [
   },
   {
     name: 'Register',
-    route: '/#apply',
+    route: '/apply',
     key: 'register',
   },
 ];
