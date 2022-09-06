@@ -68,7 +68,7 @@
         user_aadhar: "Unknown",
     });
 
-    const res = await fetch(`http://localhost:8000/users/me`, {
+    const res = await fetch(`https://api.policepublic.in/users/me`, {
         headers: { Authorization: localStorage.getItem("ppc_token") },
     });
 

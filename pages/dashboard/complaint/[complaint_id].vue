@@ -131,7 +131,7 @@
     const complaint_id = route.params.complaint_id as string;
 
     const res = await fetch(
-        `http://localhost:8000/complaints/get/${complaint_id}`,
+        `https://api.policepublic.in/complaints/get/${complaint_id}`,
         { headers: { Authorization: localStorage.getItem("ppc_token") } }
     );
     if (res.status == 200) {
@@ -164,7 +164,7 @@
         const commentVal = enteringComment.value;
         if (!commentVal) return;
         const res = await fetch(
-            `http://localhost:8000/complaints/comments/${complaint_id}`,
+            `https://api.policepublic.in/complaints/comments/${complaint_id}`,
             {
                 method: "POST",
                 body: JSON.stringify({ comment: commentVal }),
@@ -177,7 +177,7 @@
     }
     async function attend() {
         const res = await fetch(
-            `http://localhost:8000/complaints/${complaint_id}/attend`,
+            `https://api.policepublic.in/complaints/${complaint_id}/attend`,
             {
                 method: "POST",
                 headers: { Authorization: localStorage.getItem("ppc_token") },

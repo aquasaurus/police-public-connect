@@ -80,7 +80,7 @@
             return anErrorOccured(
                 "Please check whether all data has been entered properly."
             );
-        const auth = await fetch("http://localhost:8000/complaints/new", {
+        const auth = await fetch("https://api.policepublic.in/complaints/new", {
             method: "POST",
             body: JSON.stringify(complaintInfo),
         });

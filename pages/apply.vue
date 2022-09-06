@@ -134,43 +134,43 @@
                 required
             />
             <label
-                for="user_"
+                for="user_father_name"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"
                 required
                 >Father Name</label
             >
             <input
                 type="text"
-                name="user_"
-                id="user_"
+                name="user_father_name"
+                id="user_father_name"
                 placeholder="தந்தையின் பெயர்"
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
             />
             <label
-                for="user_"
+                for="user_mother_name"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"
                 required
                 >Mother Name</label
             >
             <input
                 type="text"
-                name="user_"
-                id="user_"
+                name="user_mother_name"
+                id="user_mother_name"
                 placeholder="தாய் பெயர்"
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
             />
             <label
-                for="user_"
+                for="user_parent_phone"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"
                 required
                 >Parent Phone Number</label
             >
             <input
                 type="text"
-                name="user_"
-                id="user_"
+                name="user_parent_phone"
+                id="user_parent_phone"
                 placeholder="பெற்றோர் தொலைபேசி எண்"
                 class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
@@ -239,7 +239,15 @@
             user_address: formData.get("user_address"),
             user_city: formData.get("user_city"),
             user_pincode: formData.get("user_pincode"),
-            user_aadhar: formData.get("user_aadhar"),
+            user_aadhar: formData.get("user_aadhar"), 
+            user_experience: formData.get("user_experience"),//*
+            user_experience_desc: formData.get("user_experience_desc"), //*
+            user_agree_to_terms: formData.get("user_agree_to_terms"), //*
+            user_health: formData.get("user_health"),//*
+            user_health_desc: formData.get("user_health_desc"),//*
+            user_father_name: formData.get("user_father_name"),
+            user_mother_name: formData.get("user_mother_name"),
+            user_parent_phone: formData.get("user_parent_phone"),
         };
         if(accountInfo.user_password !== formData.get("confirm_password")) {
             return anErrorOccured("Passwords don't match");
@@ -248,7 +256,7 @@
             return anErrorOccured(
                 "Please check whether all data has been entered properly."
             );
-        const auth = await fetch("http://localhost:8000/users/new", {
+        const auth = await fetch("https://api.policepublic.in/users/new", {
             method: "POST",
             body: JSON.stringify(accountInfo),
         });

@@ -62,7 +62,7 @@
             return anErrorOccured(
                 "Please check whether all data has been entered properly."
             );
-        const auth = await fetch("http://localhost:8000/auth", {method: "POST", body: JSON.stringify({user_email: accountInfo.user_email, user_password: accountInfo.user_password})})
+        const auth = await fetch("https://api.policepublic.in/auth", {method: "POST", body: JSON.stringify({user_email: accountInfo.user_email, user_password: accountInfo.user_password})})
         if(auth.status===200) {
             const {token} = await auth.json()
             localStorage.setItem("ppc_token", token);

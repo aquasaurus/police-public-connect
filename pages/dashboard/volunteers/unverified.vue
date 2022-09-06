@@ -13,7 +13,7 @@
     });
 
     const userInfo = ref([]);
-    const res = await fetch(`http://localhost:8000/users/unverified`, {
+    const res = await fetch(`https://api.policepublic.in/users/unverified`, {
         headers: { Authorization: localStorage.getItem("ppc_token") },
     });
     if (res.status == 200) {

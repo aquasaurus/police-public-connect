@@ -18,7 +18,7 @@
     });
 
     const complaintInfo = ref([]);
-    const res = await fetch(`http://localhost:8000/complaints/active`, {
+    const res = await fetch(`https://api.policepublic.in/complaints/active`, {
         headers: { Authorization: localStorage.getItem("ppc_token") },
     });
     if (res.status == 200) {

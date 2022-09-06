@@ -162,7 +162,7 @@
     const { userInfo } = defineProps({ userInfo: Object });
 
     async function approveUser() {
-        const res = await fetch(`http://localhost:8000/u/${userInfo.user_id}/verify`, {
+        const res = await fetch(`https://api.policepublic.in/u/${userInfo.user_id}/verify`, {
             method: "GET",
             headers: { Authorization: localStorage.getItem("ppc_token") },
         });
@@ -172,7 +172,7 @@
     }
 
     async function deactivateUser() {
-        const res = await fetch(`http://localhost:8000/u/${userInfo.user_id}/unverify`, {
+        const res = await fetch(`https://api.policepublic.in/u/${userInfo.user_id}/unverify`, {
             method: "GET",
             headers: { Authorization: localStorage.getItem("ppc_token") },
         });
