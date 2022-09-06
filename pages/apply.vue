@@ -330,10 +330,23 @@
         if(accountInfo.user_password !== formData.get("confirm_password")) {
             return anErrorOccured("Passwords don't match");
         }
-        if (Array.from(formData.values()).some((x) => !x))
+        if((accountInfo.user_aadhar as string).length !== 12) {
+            return anErrorOccured("Invalid aadhar number");
+        }
+        if((accountInfo.user_phone as string).length !== 10) {
+            return anErrorOccured("Invalid mobile number");
+        }
+        if(accountInfo.user_experience && !accountInfo.user_experience_desc) {
+            return anErrorOccured("Please describe your previous experience.");
+        }
+        if(accountInfo.user_health && !accountInfo.user_health_desc) {
+            return anErrorOccured("Please describe your health issues.");
+        }
+
+/*        if (Array.from(formData.values()).some((x) => !x))
             return anErrorOccured(
                 "Please check whether all data has been entered properly."
-            );
+            );*/
         const auth = await fetch("https://api.policepublic.in/users/new", {
             method: "POST",
             body: JSON.stringify(accountInfo),
