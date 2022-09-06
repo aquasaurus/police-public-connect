@@ -201,7 +201,84 @@
                 class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
                 required
             />
+            <label
+                for="user_health"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                >Any Health issues</label
+            >
+            <input
+                type="checkbox"
+                name="user_health"
+                id="user_health"
+                placeholder=""
+                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                
+            />
+            <label
+                for="user_health_desc"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                >If Yes, Mention it</label
+            >
+            <input
+                type="text"
+                name="user_health_desc"
+                id="user_health_desc"
+                placeholder="Leave empty if none"
+                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+            />
+            <label
+                for="user_experience"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                >Any Past Volunteering Experience</label
+            >
+            <input
+                type="checkbox"
+                name="user_experience"
+                id="user_experience"
+                placeholder=""
+                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+    
+            />
+            <label
+                for="user_experience_desc"
+                class="font-semibold text-base uppercase text-center lg:text-left w-full"
+                >If Yes, Mention it</label
+            >
+            <input
+                type="text"
+                name="user_experience_desc"
+                id="user_experience_desc"
+                placeholder="Leave empty if none"
+                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+            />
+            
         </div>
+        <label
+                for="user_agree_to_terms"
+                class="font-semibold text-base text-red-600 uppercase text-center lg:text-left w-full"
+                >I hereby declare that information provided by me is correct to my fullest knowledge</label
+            >
+            <input
+                type="checkbox"
+                name="user_dummy"
+                id="user_agree_to_terms"
+                placeholder=""
+                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
+            <label
+                for="user_agree_to_terms"
+                class="font-semibold text-base text-red-600 uppercase text-center lg:text-left w-full"
+                >I further agree and submit this form with the consent of my parents or guardian to carry out this social activity for the benefit of public.</label
+            >
+            <input
+                type="checkbox"
+                name="user_agree_to_terms"
+                id="user_agree_to_terms"
+                placeholder=""
+                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                required
+            />
         <MiscMessage
             :class="message.content ? `visible` : `invisible`"
             :type="message.type"
@@ -229,6 +306,7 @@
     async function validateForm(e: SubmitEvent) {
         e.preventDefault();
         const formData = new FormData(loginForm.value);
+        console.log(Array.from(formData.entries()))
         const accountInfo = {
             user_email: formData.get("user_email"),
             user_password: formData.get("user_password"),
