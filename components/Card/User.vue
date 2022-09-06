@@ -121,6 +121,22 @@
                                 userInfo.user_parent_phone
                             }}</span>
                         </div>
+                        <div class="flex flex-col space-y-1 break-words">
+                            <span class="font-semibold text-lg uppercase"
+                                >Previous experience</span
+                            >
+                            <span class="text-base">{{
+                                userInfo.user_experience_desc
+                            }}</span>
+                        </div>
+                        <div class="flex flex-col space-y-1 break-words">
+                            <span class="font-semibold text-lg uppercase"
+                                >Health issues</span
+                            >
+                            <span class="text-base">{{
+                                userInfo.user_health_desc
+                            }}</span>
+                        </div>
                         
                         <!--
                             <div class="flex flex-col space-y-1 break-words">
