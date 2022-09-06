@@ -13,7 +13,7 @@
     <LayoutHeader :nav-list="Navigation" />
     <main class="flex-1 w-full mx-auto bg-white"><slot /></main>
     <LayoutFab :nav="FabNav" />
-    <footer></footer>
+    <LayoutFooter />
   </div>
 </template>
     <style>
