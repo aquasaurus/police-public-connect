@@ -97,6 +97,31 @@
                                 userInfo.user_aadhar
                             }}</span>
                         </div>
+                        <div class="flex flex-col space-y-1 break-words">
+                            <span class="font-semibold text-lg uppercase"
+                                >Father Name</span
+                            >
+                            <span class="text-base">{{
+                                userInfo.user_father_name
+                            }}</span>
+                        </div>
+                        <div class="flex flex-col space-y-1 break-words">
+                            <span class="font-semibold text-lg uppercase"
+                                >Mother Name</span
+                            >
+                            <span class="text-base">{{
+                                userInfo.user_mother_name
+                            }}</span>
+                        </div>
+                        <div class="flex flex-col space-y-1 break-words">
+                            <span class="font-semibold text-lg uppercase"
+                                >Parent Mobile Number</span
+                            >
+                            <span class="text-base">{{
+                                userInfo.user_parent_phone
+                            }}</span>
+                        </div>
+                        
                         <!--
                             <div class="flex flex-col space-y-1 break-words">
                             <span class="font-semibold text-lg uppercase"
