@@ -11,7 +11,7 @@
       <ul class="
           sm:flex
           items-center
-          justify-between
+          justify-center
           max-w-6xl
           mx-auto
           py-4
