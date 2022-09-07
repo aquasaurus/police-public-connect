@@ -1,6 +1,6 @@
 <template>
     <div class="p-2 w-full">
-        <div class="bg-white w-full shadow-lg">
+        <div class="bg-black/20 w-full shadow-lg">
             <div
                 :class="`flex flex-row items-center rounded-t-xl border-b-4 ${
                     complaintInfo.complaint_status === 1

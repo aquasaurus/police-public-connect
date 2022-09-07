@@ -1,6 +1,6 @@
 <template>
     <div class="p-2 w-full">
-        <div class="bg-white w-full shadow-lg">
+        <div class="bg-black/20 w-full shadow-lg">
             <div
                 :class="`transition-all duration-500 ease-in-out overflow-y-hidden px-4 w-full`"
             >

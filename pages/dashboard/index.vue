@@ -1,6 +1,6 @@
 <template>
     <div class="max-w-6xl mx-auto flex flex-col space-y-4">
-        <div class = "text-2xl uppercase">New Unattended Complaints</div>
+        <div class = "text-2xl uppercase font-bold">New Unattended Complaints</div>
         <CardComplaint
             v-for="complaint in complaintInfo.sort(
                 (a, b) =>

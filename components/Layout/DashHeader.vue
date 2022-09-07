@@ -1,5 +1,5 @@
 <template>
-  <header :class="`flex flex-row w-full lg:sticky top-0 z-50 relative bg-gray-800`">
+  <header :class="`flex flex-row w-full lg:sticky top-0 z-50 relative bg-black/20`">
     <div :class="`flex flex-row w-full items-center p-4`">
       <div :class="`flex flex-row items-center justify-center lg:hidden`">
         <button
@@ -47,7 +47,7 @@
       <div
         :class="`flex flex-col lg:flex-row transition duration-500 ease-in-out transform absolute lg:static top-16 left-0 ${
           navOpen ? `-translate-x-0` : `-translate-x-140`
-        } space-y-4 lg:space-y-0 lg:space-x-4 lg:items-center text-base lg:translate-x-0 lg:max-w-8xl w-full text-white uppercase font-semibold lg:mx-auto bg-gray-800 py-8 lg:py-2 px-8 lg:px-1 min-h-screen lg:min-h-0 overflow-y-auto`"
+        } space-y-4 lg:space-y-0 lg:space-x-4 lg:items-center text-base lg:translate-x-0 lg:max-w-8xl w-full text-white uppercase font-semibold lg:mx-auto bg-gray-800/90 lg:bg-transparent py-8 lg:py-2 px-8 lg:px-1 min-h-screen lg:min-h-0 overflow-y-auto`"
       >
         <a
           :class="`hover:text-blue-300 transition duration-500 px-4 lg:px-1`"
