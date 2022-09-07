@@ -2,7 +2,13 @@
     <div class="p-2 w-full">
         <div class="bg-white w-full shadow-lg">
             <div
-                class="flex flex-row items-center rounded-t-xl border-b-2 border-blue-400 px-4 py-6 justify-between cursor-pointer"
+                :class="`flex flex-row items-center rounded-t-xl border-b-4 ${
+                    complaintInfo.complaint_status === 1
+                        ? `border-red-400`
+                        : complaintInfo.complaint_status === 2
+                        ? `border-blue-400`
+                        : `border-gray-900`
+                } px-4 py-6 justify-between cursor-pointer`"
                 @click="() => (complaintOpen = !complaintOpen)"
             >
                 <span>#{{ complaintInfo.complaint_id }}</span>

@@ -62,6 +62,11 @@ const Navigation = [
     key: `dashboard`,
   },
   {
+    name: `All Complaints`,
+    route: `/dashboard/complaints`,
+    key: `complaints`,
+  },
+  {
     name: `My Complaints`,
     route: `/dashboard/mycomplaints`,
     key: `mycomplaints`,

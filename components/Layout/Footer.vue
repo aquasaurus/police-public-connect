@@ -20,9 +20,9 @@
           md:text-black
         ">
         <div class="flex-initial mt-3 sm:mt-0">
-          <a href="javascript:void(0)" target="_blank" class="font-semibold text-white">
+          <p target="_blank" class="font-semibold text-white">
             Developed by Students of Artificial Intelligence and Data Science, Easwari Engineering College
-          </a>
+          </p>
         </div>
       </ul>
     </footer>

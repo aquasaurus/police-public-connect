@@ -54,11 +54,11 @@
                 </div>
                 <div class="flex flex-col space-y-1 break-words items-center">
                     <span class="font-semibold text-lg uppercase">Previous Experience</span>
-                    <span class="text-base">{{ userInfo.user_experience_desc }}</span>
+                    <span class="text-base">{{ userInfo.user_experience_desc || "None" }}</span>
                 </div>
                 <div class="flex flex-col space-y-1 break-words items-center">
                     <span class="font-semibold text-lg uppercase">Health Issues</span>
-                    <span class="text-base">{{ userInfo.user_health_desc }}</span>
+                    <span class="text-base">{{ userInfo.user_health_desc || "None" }}</span>
                 </div>
             </div>
         </div>

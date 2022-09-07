@@ -25,17 +25,18 @@
                 </div>
                 <div class="flex flex-col space-y-1 break-words">
                     <span class="font-semibold text-lg uppercase">Status</span>
-                    <span class="text-base">{{
+                    <span v-if = "complaintInfo.complaint_status !== 2" class="text-base">{{
                         complaintInfo.complaint_status === 1
                             ? "Open"
-                            : complaintInfo.complaint_status === 2
-                            ? `Attended by #${complaintInfo.complaint_attendee}`
                             : complaintInfo.complaint_status === 3
                             ? "Closed"
                             : complaintInfo.complaint_status === 4
                             ? "Flagged"
                             : "Unknown"
                     }}</span>
+                    <span v-else>
+                            Attended by <a class = "text-blue-500" :href = "`/dashboard/volunteers/info/${complaintInfo.complaint_attendee}`">#{{complaintInfo.complaint_attendee}}</a>
+                    </span>
                 </div>
                 <div class="flex flex-col space-y-1 break-words">
                     <span class="font-semibold text-lg uppercase">Details</span>

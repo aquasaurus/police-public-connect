@@ -262,17 +262,26 @@
           ]"
         />
 
-        <div class="py-4">
-          <CardList
-            title="How To Volunteer?"
-            :description="[
-              'Person should be 18 years or above',
-              'Person should not possess any crime report or civil convictions before be a citizen of India.',
-              'Required consent from parent/guardian is required if they are students',
-              'He/She Must have social responsibility and urge to contribute towards society.',
-              'Mandatory to carry an Indian Personal Identification such as Aadhar,etc.',
-            ]"
-          />
+        <div class="py-4 space-y-4">
+          <a
+            href="/apply"
+            class="
+            block mx-auto
+              bg-blue-500
+              font-semibold
+              rounded-xl
+              text-lg text-center
+              p-2
+              w-72
+              transition
+              duration-500
+              ease-in-out
+              transform
+              hover:-translate-y-1
+            "
+          >
+            JOIN AS VOLUNTEER
+          </a>
         </div>
       </div>
     </div>
@@ -331,46 +340,7 @@
 
       <MiscTileCarousel :images="eventList" />
     </div>
-    <div
-      id="complaint"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-delay="100"
-      data-aos-duration="260"
-      class="max-w-7xl w-full mx-auto flex flex-col space-y-4 justify-between"
-    >
-      <div class="text-4xl mx-auto text-center text-black uppercase">
-        Complaint
-      </div>
-      <div
-        class="
-          flex flex-col
-          lg:flex-row
-          space-y-4
-          lg:space-y-0 lg:space-x-4
-          justify-start
-          max-w-7xl
-          py-12
-          items-center
-        "
-      >
-        <div class="">
-          <img src="/testpol.webp" class="object-cover w-full lg:w-[30rem]" />
-        </div>
-        <div>
-          <CardList
-            title="People Can Report"
-            :description="[
-              'Fraud',
-              'Cyber Crime',
-              'Safety Concerns',
-              'Awareness',
-              'Corruption',
-            ]"
-          />
-        </div>
-      </div>
-    </div>
+
     <div
       id="report-btn"
       class="max-w-7xl w-full mx-auto flex flex-col space-y-4 justify-between"
@@ -385,7 +355,7 @@
           rounded-2xl
           bg-gray-600 text-center
           text-white
-          p-4
+          p-4 max-w-md mx-auto font-semibold uppercase
           transition
           duration-500
           ease-in-out

@@ -39,6 +39,22 @@
                 >
                 <span class="text-base">{{ userInfo.user_aadhar }}</span>
             </div>
+            <div class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold text-lg uppercase">Father Name</span>
+                    <span class="text-base">{{ userInfo.user_father_name }}</span>
+                </div>
+                <div class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold text-lg uppercase">Mother Name</span>
+                    <span class="text-base">{{ userInfo.user_mother_name }}</span>
+                </div>
+                <div class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold text-lg uppercase">Parent Mobile Number</span>
+                    <span class="text-base">{{ userInfo.user_parent_phone }}</span>
+                </div>
+                <div class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold text-lg uppercase">Health Issues</span>
+                    <span class="text-base">{{ userInfo.user_health_desc || "None" }}</span>
+                </div>
             <!--
                             <div class="flex flex-col space-y-1 break-words">
                             <span class="font-semibold text-lg uppercase"
@@ -112,6 +128,6 @@
         userInfo.value = cInfo.map((x) => {
             x.user_dob = new Date(x.user_dob);
             return x;
-        });
+        })[0];
     }
 </script>
