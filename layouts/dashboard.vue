@@ -72,6 +72,11 @@ const Navigation = [
     route: `/dashboard/me`,
     key: `profile`,
   },
+  {
+    name: `Logout`,
+    route: `/dashboard/logout`,
+    key: `logout`,
+  },
 ];
 
 </script>

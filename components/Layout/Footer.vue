@@ -2,8 +2,7 @@
     <footer class="
         dark:bg-blue-400
         md:dark:bg-blue-400
-        bg-black
-        md:bg-grey-800
+       bg-gray-800
         shadow-md
         md:text-left
       ">
