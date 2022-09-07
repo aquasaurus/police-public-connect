@@ -137,7 +137,6 @@
     );
     if (res.status == 200) {
         const cInfo = await res.json();
-        console.log(cInfo);
         complaintInfo.value = cInfo;
         complaintInfo.value.complaint_created = new Date(
             complaintInfo.value.complaint_created

@@ -18,7 +18,6 @@
     });
     if (res.status == 200) {
         const {users: cInfo} = await res.json();
-        console.log(cInfo);
         userInfo.value = cInfo.map((x) => {
             x.user_dob = new Date(x.user_dob);
             return x;

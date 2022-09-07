@@ -306,7 +306,6 @@
     async function validateForm(e: SubmitEvent) {
         e.preventDefault();
         const formData = new FormData(loginForm.value);
-        console.log(Array.from(formData.entries()))
         const accountInfo = {
             user_email: formData.get("user_email"),
             user_password: formData.get("user_password"),

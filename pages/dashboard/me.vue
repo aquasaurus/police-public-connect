@@ -92,7 +92,6 @@
 
     if (res.status == 200) {
         const { users: cInfo } = await res.json();
-        console.log(cInfo);
         userInfo.value = cInfo;
         userInfo.value.user_dob = new Date(userInfo.value.user_dob);
     }
