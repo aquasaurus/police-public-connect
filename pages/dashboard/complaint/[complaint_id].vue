@@ -52,7 +52,7 @@
                 </button>
             </div>
             <div class="p-2 flex flex-col items-center max-w-2xl">
-                <div class="bg-gray-700 text-white w-full">
+                <div class="bg-black/20 text-white w-full">
                     <div class="border-b-2 border-blue-400">
                         <span class="p-2 font-bold uppercase text-lg"
                             >Comments Timeline</span
