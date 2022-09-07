@@ -62,7 +62,7 @@
         </a>
         <a
           v-for="x in navList"
-          :class="`hover:text-blue-300 transition duration-500 px-4 lg:px-1`"
+          :class="`hover:text-red-300 transition duration-500 px-4 lg:px-1`"
           :href="x.route"
           :key="x.key"
         >
