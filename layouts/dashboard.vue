@@ -11,7 +11,7 @@
     "
   >
     <LayoutHeader :nav-list="Navigation" />
-    <main class="flex-1 w-full mx-auto bg-white py-8"><slot /></main>
+    <main class="flex-1 w-full mx-auto bg-gradient-to-r from-red-500 to-indigo-500 py-8"><slot /></main>
     <LayoutFab :nav="FabNav" />
     <footer></footer>
   </div>
