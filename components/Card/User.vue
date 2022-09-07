@@ -7,7 +7,7 @@
             >
                 <span>{{ userInfo.user_name }} #{{ userInfo.user_id }}</span>
                 <button
-                    :class="`stroke-2 stroke-black transition duration-500 ease-in-out transform ${
+                    :class="`stroke-2 stroke-white transition duration-500 ease-in-out transform ${
                         userOpen ? `rotate-180` : `rotate-0`
                     }`"
                     @click="() => (userOpen = !userOpen)"
