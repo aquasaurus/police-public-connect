@@ -149,6 +149,31 @@
           >To build a crime free society for India to flourish and have a great
           place for all of us to lead happy lives.</span
         >
+          <ul
+              class="
+                flex flex-col
+                items-left
+                space-y-2
+                text-justify
+                list-inside list-disc
+              "
+            >
+              <li
+                v-for="(desc, i) in [
+                  'Build a Corruption and Bribery Free Society',
+                  'Build a New India with Peace & Prosperity',
+                  `Creating continued awareness in public to prevent crime`,
+                  'Build a New India with Peace & Prosperity ',
+                  'To ensure to safety of women and girls in India',
+                  'Own, Protect, Help and Be Part of Resolve to Enable our Societies to Flourish',
+                  
+                ]"
+                :key="`desc${i}`"
+                class="text-base"
+              >
+                {{ desc }}
+              </li>
+            </ul>
       </div>
       <div
         class="
@@ -170,7 +195,8 @@
       >
         <span class="text-3xl text-red-400 font-semibold">Mission</span>
         <span class="text-justify">
-          <span>To work under the guidance of police department by</span>
+          To work under the guidance of police department by
+        </span>
           <ul
             class="
               flex flex-col
@@ -182,8 +208,10 @@
           >
             <li
               v-for="(desc, i) in [
+                'To Connect Public & Police',
+                'Collaborate with Public and a Police to bring Stronger Social Justice in our Judiciary',
                 `Creating continued awareness in public to prevent crime`,
-                `Following recommended measures to help public connect with police to deal with the crime at the appropriate time`,
+                `Help police department to trace culprits with the support from our volunteers`,
                 `Help police department to trace culprits with the support from our volunteers`,
               ]"
               :key="`desc${i}`"
@@ -192,7 +220,6 @@
               {{ desc }}
             </li>
           </ul>
-        </span>
       </div>
     </div>
     <div id="aim" class="flex flex-col space-y-4 px-1 max-w-7xl mx-auto py-12">
