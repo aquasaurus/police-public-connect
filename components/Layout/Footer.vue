@@ -21,13 +21,16 @@
           md:text-black
         ">
         <div>
-          <p target="_blank" class="font-semibold text-white">
-            <i class="fi fi-rr-user"></i> C.Theyagarajan <br><i class="fi fi-rr-at"></i> tnppcsevai30@gmail.com <br> <i class="fi fi-rr-phone-call"></i> 9884475311 <br><i class="fi fi-rr-marker"></i> No.158, 4th Street, Baba Nagar, <br> Villivakkam, Chennai 600049.
+            <p class="font-semibold text-white">
+            Disclaimer: 
           </p>
+          <p target="_blank" class="text-white">
+            Police Public Connectors is a welfare society that solely focuses on public good and helping hand support to the Department of Police. This society is in no way either a replacement or act in place, to the department of police services. The society will time to time assist police and public in carrying out the welfare activities and address the common challenges in society in consultation with police, under the registered name of ‘Police Public Connectors’.
+        </p>
         </div>
         <div>
           <p target="_blank" class="font-semibold text-white">
-            <small>&copy; Copyright 2022, </small> <br>
+            <small>&copy; Copyright 2022, Police Public Connectors. All rights reserved</small> <br>
             Developed by Students of <br> Artificial Intelligence and Data Science, <br> Easwari Engineering College.
           </p>
         </div>

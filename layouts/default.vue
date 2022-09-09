@@ -76,6 +76,11 @@ const Navigation = [
     key: `events`,
   },
   {
+    name: 'Contact us',
+    route: '/#complain',
+    key: 'contact us',
+  },
+  {
     name: `Complain`,
     route: `/complain`,
     key: `complain`,
