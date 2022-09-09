@@ -1,4 +1,4 @@
-<!--<template>
+<template>
     <div class="text-base mx-auto">
         <div class="gap-2 flex flex-col items-start stroke-2">
             <div class="flex flex-row items-center space-x-4">
@@ -34,4 +34,4 @@
             </div>
         </div>
     </div>
-</template>-->
+</template>

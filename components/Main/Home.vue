@@ -404,8 +404,10 @@
 
     <div class="h-[1rem]" />
   </div>
-
-  <div class="p-2 flex flex-col item-center text-black stroke-black ml-auto">
+  <div class="text-4xl font-semibold mx-auto text-center text-black">
+          CONTACT US
+        </div>
+  <div class="p-2 flex py-16 flex-col item-center text-black stroke-black ml-auto">
             <CardContact />
         </div>
 </template>

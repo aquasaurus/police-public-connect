@@ -1,68 +1,73 @@
 <template>
     <div class="mt-12">
-        <div class="grid grid-cols-1 gap-8 items-start">
+        <div class="grid lg:grid-cols-3 grid-cols-0 my-auto gap-8 items-start">
             <div class="p-2 flex flex-col space-y-4 mx-auto items-center">
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase">Name</span>
+                <section class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold text-lg text-amber-400 uppercase">Name</span>
                     <span class="text-base">{{ userInfo.user_name }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase"
+                </section>
+                <section class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold text-amber-400 text-lg uppercase"
                         >Contact Number</span
                     >
                     <span class="text-base">{{ userInfo.user_phone }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase"
+                </section>
+                <section class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold text-amber-400 text-lg uppercase"
                         >Email ID</span
                     >
                     <span class="text-base">{{ userInfo.user_email }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase"
+                </section>
+                <section class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold text-amber-400 text-lg uppercase"
                         >Date of Birth</span
                     >
                     <span class="text-base">{{ userInfo.user_dob.toISOString().split("T")[0].split("-").reverse().join("-") }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase">Address</span>
+                </section>
+                 </div>
+            <div class="p-2 flex flex-col space-y-4 mx-auto items-center">
+            <section class="flex flex-col space-y-1 break-words items-center">
+                <span class="font-semibold text-amber-400 text-lg uppercase">Father Name</span>
+                <span class="text-base">{{ userInfo.user_father_name }}</span>
+            </section>
+            <section class="flex flex-col space-y-1 break-words items-center">
+                <span class="font-semibold text-amber-400 text-lg uppercase">Mother Name</span>
+                <span class="text-base">{{ userInfo.user_mother_name }}</span>
+            </section>
+            <section class="flex flex-col space-y-1 break-words items-center">
+                <span class="font-semibold text-amber-400 text-lg uppercase">Parent Mobile Number</span>
+                <span class="text-base">{{ userInfo.user_parent_phone }}</span>
+            </section>
+            <section class="flex flex-col space-y-1 break-words items-center">
+                <span class="font-semibold text-amber-400 text-lg uppercase">Previous Experience</span>
+                <span class="text-base">{{ userInfo.user_experience_desc || "None" }}</span>
+            </section>
+            <section class="flex flex-col space-y-1 break-words items-center">
+                <span class="font-semibold text-amber-400 text-lg uppercase">Health Issues</span>
+                <span class="text-base">{{ userInfo.user_health_desc || "None" }}</span>
+            </section>
+        </div>
+            <div class="p-2 flex flex-col space-y-4 mx-auto items-center">
+                <section class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold text-amber-400 text-lg uppercase">Address</span>
                     <span class="text-base">{{ userInfo.user_address }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase">City</span>
+                </section>
+                <section class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold text-amber-400 text-lg uppercase">City</span>
                     <span class="text-base">{{ userInfo.user_city }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase">Pincode</span>
+                </section>
+                <section class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold text-amber-400 text-lg uppercase">Pincode</span>
                     <span class="text-base">{{ userInfo.user_pincode }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase">Aadhar Number</span>
+                </section>
+                <section class="flex flex-col space-y-1 break-words items-center">
+                    <span class="font-semibold  text-amber-400 text-lg uppercase">Aadhar Number</span>
                     <span class="text-base">{{ userInfo.user_aadhar }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase">Father Name</span>
-                    <span class="text-base">{{ userInfo.user_father_name }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase">Mother Name</span>
-                    <span class="text-base">{{ userInfo.user_mother_name }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase">Parent Mobile Number</span>
-                    <span class="text-base">{{ userInfo.user_parent_phone }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase">Previous Experience</span>
-                    <span class="text-base">{{ userInfo.user_experience_desc || "None" }}</span>
-                </div>
-                <div class="flex flex-col space-y-1 break-words items-center">
-                    <span class="font-semibold text-lg uppercase">Health Issues</span>
-                    <span class="text-base">{{ userInfo.user_health_desc || "None" }}</span>
-                </div>
+                </section>
+            </div>
+            
             </div>
         </div>
-    </div>
 </template>
 
 <script setup lang="ts">
