@@ -156,16 +156,18 @@
                 space-y-2
                 text-justify
                 list-inside list-disc
+                whitespace-pre
               "
             >
               <p
                 v-for="(desc, i) in [
-                  'Build a Corruption and Bribery Free Society',
-                  'Build a New India with Peace & Prosperity',
-                  `Creating continued awareness in public to prevent crime`,
-                  'Build a New India with Peace & Prosperity ',
-                  'To ensure to safety of women and girls in India',
-                  'Own, Protect, Help and Be Part of Resolve to Enable our Societies to Flourish',
+                  '&#8227;   Build a Corruption and Bribery Free Society',
+                  '&#8227;   Build a New India with Peace & Prosperity',
+                  `&#8227;   Creating continued awareness in public to prevent crime`,
+                  '&#8227;   Build a New India with Peace & Prosperity ',
+                  '&#8227;   To ensure to safety of women and girls in India',
+                  '&#8227;   Own, Protect, Help and Be Part of Resolve to Enable our',
+                  '      Societies to Flourish',
                   
                 ]"
                 :key="`desc${i}`"
@@ -204,15 +206,19 @@
               space-y-2
               text-justify
               list-inside list-disc
+              whitespace-pre
             "
           >
             <p
               v-for="(desc, i) in [
-                'To Connect Public & Police',
-                'Collaborate with Public and a Police to bring Stronger Social Justice in our Judiciary',
-                `Creating continued awareness in public to prevent crime`,
-                `Help police department to trace culprits with the support from our volunteers`,
-                `Help police department to trace culprits with the support from our volunteers`,
+                '&#8227;  To Connect Public & Police',
+                '&#8227;  Collaborate with Public and a Police to bring Stronger Social', 
+                '     Justice in our Judiciary',
+                `&#8227;  Creating continued awareness in public to prevent crime`,
+                `&#8227;  Help police department to trace culprits with the support`, 
+                `     from our volunteers`,
+                `&#8227;  Help police department to trace culprits with the support`, 
+                `     from our volunteers`,
               ]"
               :key="`desc${i}`"
               class="text-base text-md"
@@ -222,7 +228,7 @@
           </ul>
       </div>
     </div>
-    <div id="aim" class="flex flex-col space-y-4 px-1 max-w-7xl mx-auto py-12">
+    <div id="aim" class="flex flex-col space-y-4 px-1 max-w-7xl mx-auto py-12 whitespace-pre">
       <div
         data-aos="fade-up"
         data-aos-easing="linear"
@@ -232,13 +238,15 @@
         <CardList
           title="Our Aims and Objectives"
           :description="[
-            `Social interaction among members or volunteers of the association`,
-            `Conduct awareness sessions to the public `,
-            `Conduct training programs to members of the association`,
-            `Reach out to police services on time`,
-            `Provide required help and assistance to victims to relieve them from the state of shock and help police nab the culprits and perpetrators`,
-            `Make communities and public to be aware of police duties and functions including but not limited to the addressal of core issues such as domestic violence, child abuse, protection and rights, youth issues and problems, legal awareness, fire prevention measures and several other fire prevention measures`,
-            `Build trust and confidence in police by the public`,
+            `✓ Social interaction among members or volunteers of the association`,
+            `✓ Conduct awareness sessions to the public `,
+            `✓ Conduct training programs to members of the association`,
+            `✓ Reach out to police services on time`,
+            `✓ Provide required help and assistance to victims to relieve them from the state of shock and help police nab the culprits and perpetrators`,
+            `✓ Make communities and public to be aware of police duties and functions including but not limited to the addressal of core issues such as`, 
+            `    domestic violence, child abuse, protection and rights, youth issues and problems, legal awareness, fire prevention measures and`, 
+            `    several other fire prevention measures`,
+            `✓ Build trust and confidence in police by the public`,
           ]"
         />
       </div>
@@ -269,23 +277,23 @@
           class="mx-left"
           title="Eligibility"
           :description="[
-            'Person should be 18 years or above',
-            'Person should not possess any crime report or civil convictions before be a citizen of India.',
-            'Required consent from parent/guardian is required if they are students',
-            'He/She Must have social responsibility and urge to contribute towards society.',
-            'Mandatory to carry an Indian Personal Identification such as Aadhar,etc.',
+            '&#10146; Person should be 18 years or above',
+            '&#10146; Person should not possess any crime report or civil convictions before be a citizen of India.',
+            '&#10146; Required consent from parent/guardian is required if they are students',
+            '&#10146; He/She Must have social responsibility and urge to contribute towards society.',
+            '&#10146; Mandatory to carry an Indian Personal Identification such as Aadhar,etc.',
           ]"
         />
         <CardList
           class="mx-left"
           title="Perks"
           :description="[
-            'Approval letter from government',
-            'Uniform/Jacket from PPC Org',
-            'PPC organization Identity card',
-            'Official PPC org Badge',
-            'A supportive community',
-            'Recognition and appreciation for exceptional volunteer',
+            '&#10146; Approval letter from government',
+            '&#10146; Uniform/Jacket from PPC Org',
+            '&#10146; PPC organization Identity card',
+            '&#10146; Official PPC org Badge',
+            '&#10146; A supportive community',
+            '&#10146; Recognition and appreciation for exceptional volunteer',
           ]"
         />
 
