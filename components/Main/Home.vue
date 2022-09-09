@@ -39,7 +39,7 @@
         data-aos-delay="100"
         data-aos-duration="260"
       >
-        <div class="order-1 lg:order-2">
+        <div class="order-1 min-h-[25rem] lg:min-h-auto lg:order-2">
           <div class="flex items-start font-semibold">
             <span class="text-4xl max-w-2xl lg:text-7xl break-words">{{
               current[0]
@@ -404,17 +404,10 @@
 
     <div class="h-[1rem]" />
   </div>
-  <div class="text-4xl mx-auto text-center text-black">
-    CONTACT US
-    <div class = "text-xl m-auto py-8">
-      <p><i class="fi fi-rr-user"></i>- C.Theyagarajan </p>
-      <p><i class="fi fi-rr-at"></i> - tnppcsevai30@gmail.com </p>
-      <p><i class="fi fi-rr-phone-call"></i> - +91 9884475311 </p> 
-      <p><i class="fi fi-rr-marker"></i></p>
-      <p>- No.158, 4th Street, Baba Nagar,</p>
-      <p>- Villivakkam, Chennai 600049.</p>
-    </div>
-</div>
+
+  <div class="p-2 flex flex-col item-center text-black stroke-black ml-auto">
+            <CardContact />
+        </div>
 </template>
 
 <style>

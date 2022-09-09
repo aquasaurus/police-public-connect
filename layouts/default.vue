@@ -6,6 +6,7 @@
       font-[Poppins]
       text-lg
       tracking-wide
+      break-words
       text-gray-900
       bg-white
     "
