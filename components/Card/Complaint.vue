@@ -4,9 +4,9 @@
             <div
                 :class="`flex flex-row items-center rounded-t-xl border-b-4 ${
                     complaintInfo.complaint_status === 1
-                        ? `border-red-400`
+                        ? `border-red-500`
                         : complaintInfo.complaint_status === 2
-                        ? `border-blue-400`
+                        ? `border-amber-300`
                         : `border-gray-900`
                 } px-4 py-6 justify-between cursor-pointer`"
                 @click="() => (complaintOpen = !complaintOpen)"
