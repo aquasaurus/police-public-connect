@@ -54,7 +54,7 @@
         >
         <button
             type="submit"
-            class="max-w-md mx-auto text-white rounded-xl p-4 w-full bg-blue-400 transition duration-500 ease-in-out transform hover:-translate-y-1"
+            class="max-w-md mx-auto text-white rounded-xl p-4 w-full bg-red-600 transition duration-500 ease-in-out transform hover:-translate-y-1"
         >
             Submit / பதிவிக்கவும்
         </button>

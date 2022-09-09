@@ -439,7 +439,7 @@ const changeHero = () => {
           0,
           current.value[0].length - 2
         )),
-      100 * (50 + i + typer[current.value[2]].length)
+      1000 * (50 + i + typer[current.value[2]].length)
     );
   }
 };
