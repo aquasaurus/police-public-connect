@@ -85,5 +85,10 @@ const Navigation = [
     route: '/apply',
     key: 'register',
   },
+  {
+    name: 'Login',
+    route: '/login',
+    key: 'login',
+  },
 ];
 </script>

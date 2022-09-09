@@ -22,7 +22,7 @@
         ">
         <div>
           <p target="_blank" class="font-semibold text-white">
-            C.Theyagarajan <br> 9884475311 <br> No.158, 4th Street, Baba Nagar, <br> Villivakkam, Chennai 600049.
+            <i class="fi fi-rr-user"></i> C.Theyagarajan <br><i class="fi fi-rr-at"></i> tnppcsevai30@gmail.com <br> <i class="fi fi-rr-phone-call"></i> 9884475311 <br><i class="fi fi-rr-marker"></i> No.158, 4th Street, Baba Nagar, <br> Villivakkam, Chennai 600049.
           </p>
         </div>
         <div>
