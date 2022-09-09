@@ -158,7 +158,7 @@
                 list-inside list-disc
               "
             >
-              <li
+              <p
                 v-for="(desc, i) in [
                   'Build a Corruption and Bribery Free Society',
                   'Build a New India with Peace & Prosperity',
@@ -171,8 +171,8 @@
                 :key="`desc${i}`"
                 class="text-base"
               >
-                {{ desc }}
-              </li>
+                <i class="fi fi-rr-angle-small-right">{{ desc }}</i>
+              </p>
             </ul>
       </div>
       <div
