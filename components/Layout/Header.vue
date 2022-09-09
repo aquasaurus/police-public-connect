@@ -50,7 +50,7 @@
         } space-y-4 lg:space-y-0 lg:space-x-4 lg:items-center text-base lg:translate-x-0 lg:max-w-8xl w-full text-white uppercase font-semibold lg:mx-auto bg-gray-800 py-8 lg:py-2 px-8 lg:px-1 min-h-screen lg:min-h-0 overflow-y-auto`"
       >
         <a
-          :class="`hover:text-blue-300 transition duration-500 px-4 lg:px-1`"
+          :class="`hover:text-red-300 transition duration-500 px-4 lg:px-1`"
           href="/"
           key="logo"
         >
@@ -62,7 +62,7 @@
         </a>
         <a
           v-for="x in navList"
-          :class="`hover:text-blue-300 transition duration-500 px-4 lg:px-1`"
+          :class="`hover:text-red-300 transition duration-500 px-4 lg:px-1`"
           :href="x.route"
           :key="x.key"
         >
