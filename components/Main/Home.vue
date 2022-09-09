@@ -68,7 +68,7 @@
           <a
             href="/complain"
             class="
-              bg-yellow-600
+              bg-red-600
               font-semibold
               rounded-xl
               text-lg text-center
@@ -144,7 +144,7 @@
           lg:hover:scale-110
         "
       >
-        <span class="text-3xl text-orange-400 font-semibold">Vision</span>
+        <span class="text-3xl text-red-400 font-semibold">Vision</span>
         <span class="text-justify"
           >To build a crime free society for India to flourish and have a great
           place for all of us to lead happy lives.</span
@@ -168,7 +168,7 @@
           lg:hover:scale-110
         "
       >
-        <span class="text-3xl text-orange-400 font-semibold">Mission</span>
+        <span class="text-3xl text-red-400 font-semibold">Mission</span>
         <span class="text-justify">
           <span>To work under the guidance of police department by</span>
           <ul
@@ -353,7 +353,7 @@
         href="/complain"
         class="
           rounded-2xl
-          bg-gray-600 text-center
+          bg-red-600 text-center
           text-white
           p-4 max-w-md mx-auto font-semibold uppercase
           transition
