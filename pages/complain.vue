@@ -1,4 +1,5 @@
 <template>
+    <div class="bg-orange-100 h-screen">
     <form
         ref="complaintForm"
         class="max-w-xl w-full mx-auto py-12 p-2 flex flex-col space-y-4"
@@ -59,6 +60,7 @@
             Submit / பதிவிக்கவும்
         </button>
     </form>
+    </div>
 </template>
 
 <script setup lang="ts">
