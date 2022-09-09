@@ -396,6 +396,17 @@
 
     <div class="h-[1rem]" />
   </div>
+  <div class="text-4xl mx-auto text-center text-black">
+    CONTACT US
+    <div class = "text-xl m-auto py-8">
+      <p><i class="fi fi-rr-user"></i>- C.Theyagarajan </p>
+      <p><i class="fi fi-rr-at"></i> - tnppcsevai30@gmail.com </p>
+      <p><i class="fi fi-rr-phone-call"></i> - +91 9884475311 </p> 
+      <p><i class="fi fi-rr-marker"></i></p>
+      <p>- No.158, 4th Street, Baba Nagar,</p>
+      <p>- Villivakkam, Chennai 600049.</p>
+    </div>
+</div>
 </template>
 
 <style>
