@@ -4,13 +4,13 @@
       <div class="flex flex-col items-left space-y-4">
         <div class="text-2xl font-semibold text-blue-400 text-left uppercase">{{ title }}</div>
         <ul class="flex flex-col items-left space-y-2 text-justify list-inside list-disc">
-          <li
+          <p
             v-for="(desc, i) in description"
             :key="`desc${i}`"
             class="text-base"
           >
-            {{ desc }}
-          </li>
+          <i class="fi fi-rr-check text-cyan-400"> </i> {{ desc }}
+        </p>
         </ul>
       </div>
     </div>
