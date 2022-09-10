@@ -47,10 +47,11 @@
       <div
         :class="`flex flex-col lg:flex-row transition duration-500 ease-in-out transform absolute lg:static top-16 left-0 ${
           navOpen ? `-translate-x-0` : `-translate-x-140`
-        } space-y-4 lg:space-y-0 lg:space-x-4 lg:items-center text-base lg:translate-x-0 lg:max-w-8xl w-full text-white uppercase font-semibold lg:mx-auto bg-gray-800/90 lg:bg-transparent py-8 lg:py-2 px-8 lg:px-1 min-h-screen lg:min-h-0 overflow-y-auto`"
+        } space-y-4 lg:space-y-0 lg:space-x-4 lg:items-center lg:justify-between text-base lg:translate-x-0 lg:max-w-8xl w-full text-white uppercase font-semibold lg:mx-auto bg-gray-800/90 lg:bg-transparent py-8 lg:py-2 px-8 lg:px-1 min-h-screen lg:min-h-0 overflow-y-auto`"
       >
+      <div class = "flex flex-col lg:flex-row items-center gap-2 justify-start">
         <a
-          :class="`hover:text-blue-300 transition duration-500 px-4 lg:px-1`"
+          :class="`hover:text-red-300 transition duration-500 px-4 lg:px-1`"
           href="/"
           key="logo"
         >
@@ -61,13 +62,24 @@
           />
         </a>
         <a
-          v-for="x in navList"
+          v-for="x in navList.filter(x => !x.right)"
           :class="`hover:text-red-300 transition duration-500 px-4 lg:px-1`"
           :href="x.route"
           :key="x.key"
         >
           {{ x.name }}
         </a>
+      </div>
+      <div class = "flex flex-col lg:flex-row items-center gap-2 justify-start">
+        <a
+          v-for="x in navList.filter(x => x.right)"
+          :class="`hover:text-red-300 transition duration-500 px-4 lg:px-1`"
+          :href="x.route"
+          :key="x.key"
+        >
+          {{ x.name }}
+        </a>
+      </div>
       </div>
     </div>
   </header>

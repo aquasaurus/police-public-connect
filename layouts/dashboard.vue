@@ -3,9 +3,7 @@
         class="flex flex-col min-h-screen scroll-smooth font-[Poppins] text-lg tracking-wide text-white dashbg"
     >
         <LayoutDashHeader :nav-list="Navigation" />
-        <main
-            class="flex-1 w-full mx-auto py-8"
-        >
+        <main class="flex-1 w-full mx-auto py-8">
             <slot />
         </main>
         <LayoutFab :nav="FabNav" />
@@ -14,7 +12,7 @@
 </template>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
     .dashbg {
         background-color: #121123;
@@ -81,11 +79,13 @@
             name: `Profile`,
             route: `/dashboard/me`,
             key: `profile`,
+            right: true,
         },
         {
             name: `Logout`,
             route: `/dashboard/logout`,
             key: `logout`,
+            right: true,
         },
     ];
 </script>
