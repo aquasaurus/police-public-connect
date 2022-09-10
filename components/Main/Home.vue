@@ -52,14 +52,14 @@
                 <CardSpecial
                     title="About Us"
                     :description="[
-                        `     Today’s biggest challenge for a common man is crime in every place in our country with rising thefts, corruption, burglary, women and girl child safety, child abuse, drugs, emotional blackmailing and intimidation, adultery, etc., Many a times the issues get unnoticed, so the help is not rendered at the appropriate time for the people. However, there are also several instances the issues get addressed at the right time with the help from the police department, provided they are informed and given enough time to nab the culprits and justice delivered back. This is, however, a post facto mode of addressal of an issue and by then several changes and shifts in the case may take place.  However, there are several initiatives that are being run by the Department of Police to address and prevent crime in the society with the help from several institutions, social organizations and the awareness of  the public. The department is continuing to create the awareness as much as they can with the public to prevent crime in the first place. Although most of the cases justice is being delivered, the question still remains as to how to bring more awareness to the common man and prevent or weed out the crime from our society, so it becomes a great place for us to live a happy and peaceful life.`,
-                        `     As we all know for such crimes to get solved or fixed, time is the essence.   This crime needs to be addressed at an appropriate time, bringing victims to justice by nabbing culprits or perpetrators and handing over to the police, thereby to continue to reduce the crime rate in the society. Besides police department is all time available to us in the front, it is also our equal responsibility to help and support the department in the way we can, by all means. Of course, but then the law that can never be taken into one’s hands. This is where the guidance and recommended measures and practices are to be understood and followed by the public from the department of police.`,
-                        `     In an attempt to help police and the common man to come even more together at the right time, we thought that we could provide the required assistance in a way that we can, and started this initiative of Police and Public Connectors, a social organization to (a) provide people in the first place, the right awareness that is needed to safeguard themselves and how to prevent crime in the future (b) where to go to, and seek help when there is an issue in terms of providing the initial helping hand to the perplexed victim (most of the times) and connect them to the police at the right time. After all, the miscreants cannot take advantage to escape and get indirectly encouraged that such crime is amenable in the society. `,
-                        `     As a social organization, Police Public connectors was a registered entity under Certification Of Registration Under Section 10 of the Tamil Nadu Societies Registration Act, 1975 with Memorandum and Bye-Laws of Association in effect, and in this service for more than ten years organizing several public awareness events and roadshows in Chennai and providing right support to the police department. The initiative and the roadshows re being appreciated by the City Police Stations, Commissioner’s Office, and Office of the Director General of Police (DGP). With their able encouragement and guidance, we also started to expand our coverage to several areas of Chennai city with the participation of like-minded people in and around us joining our institution as volunteers. `,
-                        `     In 2018, Dr. C Sailendrababu (IPS), Director of Police, unveiled the GRP app to assist passengers in Chennai Central Railway Station, and awareness roadshow was also conducted. Then our organization had distributed the GRP app to people in Central Egmore, Perambur, Tiruvannamalai, and all railway stations and also began conducting public service in Ambathur, Villivakkam, and other parts of the city.  `,
-                        `     With the continued gaining of awareness in public and traction for the need to be crime free society, we also launched an initiative to work closely with the colleges in Chennai for the students to participate as volunteers in our association to expand our services to assist the department of police.`,
-                        `     Several colleges in the city are coming forward to offer support to our efforts with their students ready to join our initiative as volunteer support. `,
-                        `   In 2022, we launched a website and a mobile application for the benefit of volunteers and to report crime by the public wherever it happens for our volunteers to pick up and rush to the spot to provide that initial handholding support to the victim and understanding the issue and help trace the culprits for the police to nab them on time.`,
+                        `Today's biggest challenge for a common man is crime in every place in our country with rising thefts, corruption, burglary, women and girl child safety, child abuse, drugs, emotional blackmailing and intimidation, adultery, etc.,. Many a times the issues get unnoticed, so the help is not rendered at the appropriate time for the people. However, there are also several instances the issues get addressed at the right time with the help from the police department, provided they are informed and given enough time to nab the culprits and justice delivered back. This is, however, a post facto mode of addressal of an issue and by then several changes and shifts in the case may take place.  However, there are several initiatives that are being run by the Department of Police to address and prevent crime in the society with the help from several institutions, social organizations and the awareness of  the public. The department is continuing to create the awareness as much as they can with the public to prevent crime in the first place. Although most of the cases justice is being delivered, the question still remains as to how to bring more awareness to the common man and prevent or weed out the crime from our society, so it becomes a great place for us to live a happy and peaceful life.`,
+                        `As we all know for such crimes to get solved or fixed, time is the essence. This crime needs to be addressed at an appropriate time, bringing victims to justice by nabbing culprits or perpetrators and handing over to the police, thereby to continue to reduce the crime rate in the society. Besides police department is all time available to us in the front, it is also our equal responsibility to help and support the department in the way we can, by all means. Of course, but then the law that can never be taken into one's hands. This is where the guidance and recommended measures and practices are to be understood and followed by the public from the department of police.`,
+                        `In an attempt to help police and the common man to come even more together at the right time, we thought that we could provide the required assistance in a way that we can, and started this initiative of Police and Public Connectors, a social organization to (a) provide people in the first place, the right awareness that is needed to safeguard themselves and how to prevent crime in the future (b) where to go to, and seek help when there is an issue in terms of providing the initial helping hand to the perplexed victim (most of the times) and connect them to the police at the right time. After all, the miscreants cannot take advantage to escape and get indirectly encouraged that such crime is amenable in the society. `,
+                        `As a social organization, Police Public connectors was a registered entity under Certification Of Registration Under Section 10 of the Tamil Nadu Societies Registration Act, 1975 with Memorandum and Bye-Laws of Association in effect, and in this service for more than ten years organizing several public awareness events and roadshows in Chennai and providing right support to the police department. The initiative and the roadshows re being appreciated by the City Police Stations, Commissioner's Office, and Office of the Director General of Police (DGP). With their able encouragement and guidance, we also started to expand our coverage to several areas of Chennai city with the participation of like-minded people in and around us joining our institution as volunteers. `,
+                        `In 2018, Dr. C Sailendrababu (IPS), Director of Police, unveiled the GRP app to assist passengers in Chennai Central Railway Station, and awareness roadshow was also conducted. Then our organization had distributed the GRP app to people in Central Egmore, Perambur, Tiruvannamalai, and all railway stations and also began conducting public service in Ambathur, Villivakkam, and other parts of the city.  `,
+                        `With the continued gaining of awareness in public and traction for the need to be crime free society, we also launched an initiative to work closely with the colleges in Chennai for the students to participate as volunteers in our association to expand our services to assist the department of police.`,
+                        `Several colleges in the city are coming forward to offer support to our efforts with their students ready to join our initiative as volunteer support. `,
+                        `In 2022, we launched a website for the benefit of volunteers and to report crime by the public wherever it happens for our volunteers to pick up and rush to the spot to provide that initial handholding support to the victim and understanding the issue and help trace the culprits for the police to nab them on time.`,
                     ]"
                 />
             </div>
@@ -85,13 +85,12 @@
                 >
                     <p
                         v-for="(desc, i) in [
-                            '&#8227;   Build a Corruption and Bribery Free Society',
-                            '&#8227;   Build a New India with Peace & Prosperity',
-                            `&#8227;   Creating continued awareness in public to prevent crime`,
-                            '&#8227;   Build a New India with Peace & Prosperity ',
-                            '&#8227;   To ensure to safety of women and girls in India',
-                            '&#8227;   Own, Protect, Help and Be Part of Resolve to Enable our',
-                            '      Societies to Flourish',
+                            '&#8227;   Build a Corruption and Bribery Free Society.',
+                            '&#8227;   Build a New India with Peace & Prosperity.',
+                            `&#8227;   Creating continued awareness in public to prevent crime.`,
+                            '&#8227;   Build a New India with Peace & Prosperity.',
+                            '&#8227;   To ensure to safety of women and girls in India.',
+                            '&#8227;   Own, Protect, Help and Be Part of Resolve to Enable our societies to Flourish.',
                         ]"
                         :key="`desc${i}`"
                         class="text-base"
@@ -105,18 +104,18 @@
             >
                 <span class="text-3xl text-red-400 font-semibold">Mission</span>
                 <span class="text-justify">
-                    To work under the guidance of police department by
+                    To work under the guidance of police department and
                 </span>
                 <ul
                     class="flex flex-col items-left space-y-2 text-justify list-inside list-disc"
                 >
                     <p
                         v-for="(desc, i) in [
-                            '&#8227;  To Connect Public & Police',
-                            '&#8227;  Collaborate with Public and a Police to bring Stronger Social Justice in our Judiciary',
-                            `&#8227;  Creating continued awareness in public to prevent crime`,
-                            `&#8227;  Help police department to trace culprits with the support from our volunteers`,
-                            `&#8227;  Help police department to trace culprits with the support from our volunteers`,
+                            '&#8227;  To Connect Public & Police.',
+                            '&#8227;  Collaborate with Public and a Police to bring Stronger Social Justice in our Judiciary.',
+                            `&#8227;  Creating continued awareness in public to prevent crime.`,
+                            `&#8227;  Help police department to trace culprits with the support from our volunteers.`,
+                            `&#8227;  Help police department to trace culprits with the support from our volunteers.`,
                         ]"
                         :key="`desc${i}`"
                         class="text-base text-md"
@@ -139,13 +138,13 @@
                 <CardList
                     title="Our Aims and Objectives"
                     :description="[
-                        `✓ Social interaction among members or volunteers of the association`,
-                        `✓ Conduct awareness sessions to the public `,
-                        `✓ Conduct training programs to members of the association`,
-                        `✓ Reach out to police services on time`,
-                        `✓ Provide required help and assistance to victims to relieve them from the state of shock and help police nab the culprits and perpetrators`,
-                        `✓ Make communities and public to be aware of police duties and functions including but not limited to the addressal of core issues such as domestic violence, child abuse, protection and rights, youth issues and problems, legal awareness, fire prevention measures and several other fire prevention measures`,
-                        `✓ Build trust and confidence in police by the public`,
+                        `✓ Social interaction among members or volunteers of the association.`,
+                        `✓ Conduct awareness sessions to the public.`,
+                        `✓ Conduct training programs to members of the association.`,
+                        `✓ Reach out to police services on time.`,
+                        `✓ Provide required help and assistance to victims to relieve them from the state of shock and help police nab the culprits and perpetrators.`,
+                        `✓ Make communities and public to be aware of police duties and functions including but not limited to the addressal of core issues such as domestic violence, child abuse, protection and rights, youth issues and problems, legal awareness, fire prevention measures and several other fire prevention measures.`,
+                        `✓ Build trust and confidence in police by the public.`,
                     ]"
                 />
             </div>
@@ -161,31 +160,31 @@
                     Volunteers
                 </div>
                 <span class="text-justify py-12">
-                    To build a crime free society for India to flourish and have
-                    a great place for all of us to lead happy lives.</span
+                    Police Public Connectors is an initiative to work closely with the colleges in Chennai for the students to participate as volunteers in our association to expand our services to assist the Department of Police.</span
                 >
 
                 <CardList
                     class="mx-left"
                     title="Eligibility"
                     :description="[
-                        '&#10146; Person should be 18 years or above',
-                        '&#10146; Person should not possess any crime report or civil convictions before be a citizen of India.',
-                        '&#10146; Required consent from parent/guardian is required if they are students',
-                        '&#10146; He/She Must have social responsibility and urge to contribute towards society.',
-                        '&#10146; Mandatory to carry an Indian Personal Identification such as Aadhar,etc.',
+                        '&#10146; Volunteer should be 18 years of age or older.',
+                        '&#10146; Volunteer should not possess any crime report or civil convictions before.',
+                        '&#10146; Volunteer should be a citizen of India.',
+                        '&#10146; Volunteer must have consent from parent / guardian is required if they are a student.',
+                        '&#10146; Volunteer must have social responsibility and urge to contribute towards society.',
+                        '&#10146; Volunteer must carry an Indian Personal Identification such as Aadhar.',
                     ]"
                 />
                 <CardList
                     class="mx-left"
                     title="Perks"
                     :description="[
-                        '&#10146; Approval letter from government',
-                        '&#10146; Uniform/Jacket from PPC Org',
-                        '&#10146; PPC organization Identity card',
-                        '&#10146; Official PPC org Badge',
-                        '&#10146; A supportive community',
-                        '&#10146; Recognition and appreciation for exceptional volunteer',
+                        '&#10146; Approval letter from government.',
+                        '&#10146; Uniform / Jacket from Police Public Connectors.',
+                        '&#10146; Police Public Connectors Volunteer identity card.',
+                        '&#10146; Official Police Public Connectors badge.',
+                        '&#10146; A supportive community.',
+                        '&#10146; Recognition and appreciation for exceptional volunteers.',
                     ]"
                 />
 
@@ -297,7 +296,7 @@
         },
         {
             title: "Mohan Singh Joshua",
-            description: `He was retired at the rank of Assistant Commissioner of Police with more than three decades of experience working at several levels during his tenure in Indian Police Service. An adept in solving several criminal cases, he led police armoury to provide security to then Honourable PM of our country Late Tmt Indira Gandhi, Honourable CM of Tamil Nadu Late Thiru MG Ramachandran and played several key armoury roles on special duties. He worked closely with special CIDs in Q Branch, Coracle, Crime and Food Cell to solve several criminal mysteries and cases. He was part of Tamil Nadu’s special cell for weapon striping and assembling training and firing practice. He stood first in all the training programs that he attended especially rifle factory, bomb disposal, jungle tactics, etc., and proved as an example to several police personnel. By noticing his contribution and interests, he was later inducted as a trainer and mentor to impart training to the police personnel on duty in several areas.`,
+            description: `He was retired at the rank of Assistant Commissioner of Police with more than three decades of experience working at several levels during his tenure in Indian Police Service. An adept in solving several criminal cases, he led police armoury to provide security to then Honourable PM of our country Late Tmt Indira Gandhi, Honourable CM of Tamil Nadu Late Thiru MG Ramachandran and played several key armoury roles on special duties. He worked closely with special CIDs in Q Branch, Coracle, Crime and Food Cell to solve several criminal mysteries and cases. He was part of Tamil Nadu's special cell for weapon striping and assembling training and firing practice. He stood first in all the training programs that he attended especially rifle factory, bomb disposal, jungle tactics, etc., and proved as an example to several police personnel. By noticing his contribution and interests, he was later inducted as a trainer and mentor to impart training to the police personnel on duty in several areas.`,
             subtitle: "Retired Assistant Commissioner of Police",
             image: "/people/Mohan_Singh_Joshua.jpg",
         },
