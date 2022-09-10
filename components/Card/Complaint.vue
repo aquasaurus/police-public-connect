@@ -9,12 +9,12 @@
                         ? `border-amber-300`
                         : `border-gray-900`
                 } px-4 py-6 justify-between cursor-pointer`"
-                @click="() => (complaintOpen = !complaintOpen)"
+                @click="() => {pleaseLog(complaintInfo.complaint_created); complaintOpen = !complaintOpen}"
             >
                 <span>#{{ complaintInfo.complaint_id }}</span>
                 <span>{{
                     complaintInfo.complaint_created
-                        .toUTCString()
+                        .toLocaleString("en-GB", {timeZone: "Asia/Kolkata"})
                         .split("GMT")[0]
                 }}</span
                 ><button
@@ -112,7 +112,7 @@
         complaint_created: Date;
         complaint_comments: ComplaintComments[];
     }
-
+    const pleaseLog = console.log
     enum ComplaintStatus {
         OPEN = 1,
         ATTENDED = 2,

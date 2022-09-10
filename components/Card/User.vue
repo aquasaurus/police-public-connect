@@ -175,7 +175,7 @@
                             }}</span>
                         </div>
                     </div>
-                    <div class="p-2 flex flex-col items-center">
+                    <div class="p-2 flex flex-col items-center space-y-4">
                         <button
                             v-if="userInfo.user_level === 1"
                             class="p-2 text-center bg-blue-400 text-white rounded-xl transition duration-500 ease-in-out transform hover:-translate-y-1"
@@ -190,6 +190,12 @@
                         >
                             Deactivate User
                         </button>
+                        <a
+                            :href = "`/dashboard/volunteers/data/${userInfo.user_id}`"
+                            class="p-2 text-center bg-blue-400 text-white rounded-xl transition duration-500 ease-in-out transform hover:-translate-y-1"
+                        >
+                            Printable
+                    </a>
                     </div>
                 </div>
             </div>
