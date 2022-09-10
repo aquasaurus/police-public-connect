@@ -85,16 +85,19 @@ const Navigation = [
     name: `Complain`,
     route: `/complain`,
     key: `complain`,
+    right: true,
   },
   {
     name: 'Register',
     route: '/apply',
     key: 'register',
+    right: true,
   },
   {
     name: 'Login',
     route: '/login',
     key: 'login',
+    right: true,
   },
 ];
 </script>
