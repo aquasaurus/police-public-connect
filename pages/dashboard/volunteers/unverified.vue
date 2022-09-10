@@ -1,7 +1,10 @@
 <template>
     <div class="max-w-6xl mx-auto flex flex-col space-y-4">
+        <div class = "py-2">
+            <input v-model = "toFilter" type = "text" placeholder="Filter by name / ID / mobile number" class = "rounded-xl h-12 p-2 w-full bg-black/20 text-white" />
+        </div>
         <CardUser
-            v-for="user in userInfo"
+            v-for="user in userInfo.filter(x => Number(toFilter) ? (x.user_id.includes(toFilter) || x.user_phone.includes(toFilter)) : x.user_name.toLowerCase().includes(toFilter.toLowerCase()))"
             :key="`user_${user.user_id}`"
             :user-info="user"
         />
@@ -11,6 +14,7 @@
     definePageMeta({
         layout: "dashboard",
     });
+    const toFilter = ref("")
 
     const userInfo = ref([]);
     const res = await fetch(`https://api.policepublic.in/users/unverified`, {
