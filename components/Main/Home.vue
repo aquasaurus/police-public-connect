@@ -111,11 +111,11 @@
                 >
                     <p
                         v-for="(desc, i) in [
-                            '&#8227;  To Connect Public & Police.',
-                            '&#8227;  Collaborate with Public and a Police to bring Stronger Social Justice in our Judiciary.',
-                            `&#8227;  Creating continued awareness in public to prevent crime.`,
-                            `&#8227;  Help police department to trace culprits with the support from our volunteers.`,
-                            `&#8227;  Help police department to trace culprits with the support from our volunteers.`,
+                            '&#8227; To Connect Public & Police.',
+                            '&#8227; Collaborate with Public and a Police to bring Stronger Social Justice in our Judiciary.',
+                            `&#8227; Creating continued awareness in public to prevent crime.`,
+                            `&#8227; Help police department to trace culprits with the support from our volunteers.`,
+                            `&#8227; Help police department to trace culprits with the support from our volunteers.`,
                         ]"
                         :key="`desc${i}`"
                         class="text-base text-md"
@@ -205,7 +205,7 @@
                 <div
                     class="text-4xl font-semibold mx-auto text-center text-black uppercase"
                 >
-                    Leaders
+                    Leadership
                 </div>
             </div>
             <div
@@ -307,15 +307,15 @@
     });
 
     const typer = [
-        "HELP COMMUNITIES COME CLOSER AND HARMONISE!!",
-        "COLLABORATE WITH PUBLIC AND A POLICE TO BRING STRONGER SOCIAL JUSTICE IN OUR JUDICIARY!!",
-        "BUILD A CORRUPTION AND BRIBARY FREE SOCIETY!!",
-        "BUILD A GREAT PLACE TO LIVE BY ALL COMMUNITIES!!",
-        "BUILD A NEW INDIA WITH PEACE & PROSPERITY!!",
-        "WOMEN SAFETY AND GIRL PROTECTION ARE OUR HIGHEST PRIORITY !!",
-        "BE RESPONSIBLE TO BUILD FUTURE INDIA!!",
-        "OWN, PROTECT, HELP AND BE PART OF RESOLVE TO ENABLE OUR SOCIETIES TO FLOURISH!!",
-        "BE PROUD THAT WE ARE PART OF THIS GREAT INITIATIVE!!",
+        "Help Communities come closer and harmonise!!",
+        "Collaborate with Public and a Police to bring stronger Social Justice in our Judiciary!!",
+        "Build a Corruption and Bribary free Society!!",
+        "Build a great place to live by all Communities!!",
+        "Build a new India with Peace & Prosperity!!",
+        "Women safety and Girl protection are our highest priority !!",
+        "Be responsible to build future India!!",
+        "Own, Protect, Help and be part of resolve to enable our Societies to flourish!!",
+        "Be proud that we are part of this great initiative!!",
     ];
     const current = ref(["", "", 0]);
 
