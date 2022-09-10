@@ -15,10 +15,10 @@
                 data-aos-delay="100"
                 data-aos-duration="260"
             >
-                <div class="order-1 min-h-[25rem] lg:min-h-auto lg:order-2">
+                <div class="order-1 min-h-[20rem] lg:min-h-auto lg:order-2">
                     <div class="flex items-start font-semibold">
                         <span
-                            class="text-4xl max-w-2xl lg:text-7xl break-words"
+                            class="text-4xl max-w-2xl lg:text-7xl break-words text-center lg:text-left"
                             >{{ current[0] }}</span
                         >
                     </div>
@@ -308,15 +308,15 @@
     });
 
     const typer = [
-        "HELP COMMUNITIES COME CLOSER AND HARMONISE !!",
-        "COLLABORATE WITH PUBLIC AND A POLICE TO BRING STRONGER SOCIAL JUSTICE IN OUR JUDICIARY !!",
-        "BUILD A CORRUPTION AND BRIBARY FREE SOCIETY !!",
-        "BUILD A GREAT PLACE TO LIVE BY ALL COMMUNITIES !!",
-        "BUILD A NEW INDIA WITH PEACE & PROSPERITY !!",
+        "HELP COMMUNITIES COME CLOSER AND HARMONISE!!",
+        "COLLABORATE WITH PUBLIC AND A POLICE TO BRING STRONGER SOCIAL JUSTICE IN OUR JUDICIARY!!",
+        "BUILD A CORRUPTION AND BRIBARY FREE SOCIETY!!",
+        "BUILD A GREAT PLACE TO LIVE BY ALL COMMUNITIES!!",
+        "BUILD A NEW INDIA WITH PEACE & PROSPERITY!!",
         "WOMEN SAFETY AND GIRL PROTECTION ARE OUR HIGHEST PRIORITY !!",
-        "BE RESPONSIBLE TO BUILD FUTURE INDIA !!",
-        "OWN, PROTECT, HELP AND BE PART OF RESOLVE TO ENABLE OUR SOCIETIES TO FLOURISH !!",
-        "BE PROUD THAT WE ARE PART OF THIS GREAT INITIATIVE !!",
+        "BE RESPONSIBLE TO BUILD FUTURE INDIA!!",
+        "OWN, PROTECT, HELP AND BE PART OF RESOLVE TO ENABLE OUR SOCIETIES TO FLOURISH!!",
+        "BE PROUD THAT WE ARE PART OF THIS GREAT INITIATIVE!!",
     ];
     const current = ref(["", "", 0]);
 
