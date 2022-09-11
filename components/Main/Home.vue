@@ -307,6 +307,7 @@
     });
 
     const typer = [
+        "Help win against drugs",
         "Help Communities come closer and harmonise!!",
         "Collaborate with Public and Police to bring stronger Social Justice in our Judiciary!!",
         "Build a Corruption and Bribery free Society!!",
