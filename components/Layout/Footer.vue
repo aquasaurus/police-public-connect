@@ -8,9 +8,9 @@
                 >&copy; Copyright 2022, Police Public Connectors. All rights
                 reserved</small
             >
-            <small class = "ml-auto"
+            <small class = "ml-auto text-red-300"
                 >Developed by Students of Artificial Intelligence and Data
-                Science, Easwari Engineering College.</small
+                Science,<br>Easwari Engineering College.</small
             >
         </ul>
     </footer>

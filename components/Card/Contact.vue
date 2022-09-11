@@ -1,7 +1,9 @@
 <template>
     <div class="text-base mx-auto">
         <div class="gap-2 flex flex-col items-start stroke-2">
+            <span class="text-2xl font-semibold">Police Public Connectors</span>
             <div class="flex flex-row items-center space-x-4">
+                
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
