@@ -308,8 +308,8 @@
 
     const typer = [
         "Help Communities come closer and harmonise!!",
-        "Collaborate with Public and a Police to bring stronger Social Justice in our Judiciary!!",
-        "Build a Corruption and Bribary free Society!!",
+        "Collaborate with Public and Police to bring stronger Social Justice in our Judiciary!!",
+        "Build a Corruption and Bribery free Society!!",
         "Build a great place to live by all Communities!!",
         "Build a new India with Peace & Prosperity!!",
         "Women safety and Girl protection are our highest priority !!",
