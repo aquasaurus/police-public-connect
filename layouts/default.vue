@@ -67,7 +67,7 @@ const Navigation = [
   },
 
   {
-    name: `Leaders`,
+    name: `Leadership`,
     route: `/#leaders`,
     key: `leaders`,
   },

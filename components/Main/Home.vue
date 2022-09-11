@@ -81,21 +81,21 @@
                     have a great place for all of us to lead happy lives.</span
                 >
                 <ul
-                    class="flex flex-col items-left space-y-2 text-justify list-inside list-disc"
+                    class="flex flex-col items-left space-y-2 text-justify list-outside list-disc"
                 >
                     <p
                         v-for="(desc, i) in [
-                            '&#8227;   Build a Corruption and Bribery Free Society.',
-                            '&#8227;   Build a New India with Peace & Prosperity.',
-                            `&#8227;   Creating continued awareness in public to prevent crime.`,
-                            '&#8227;   Build a New India with Peace & Prosperity.',
-                            '&#8227;   To ensure to safety of women and girls in India.',
-                            '&#8227;   Own, Protect, Help and Be Part of Resolve to Enable our societies to Flourish.',
+                            'Build a Corruption and Bribery Free Society.',
+                            'Build a New India with Peace & Prosperity.',
+                            `Creating continued awareness in public to prevent crime.`,
+                            'Build a New India with Peace & Prosperity.',
+                            'To ensure to safety of women and girls in India.',
+                            'Own, Protect, Help and Be Part of Resolve to Enable our societies to Flourish.',
                         ]"
                         :key="`desc${i}`"
                         class="text-base"
                     >
-                        <i class="fi fi-rr-angle-small-right">{{ desc }}</i>
+                    <i class="italic">{{ desc }}</i>
                     </p>
                 </ul>
             </div>
@@ -107,20 +107,20 @@
                     To work under the guidance of police department and
                 </span>
                 <ul
-                    class="flex flex-col items-left space-y-2 text-justify list-inside list-disc"
+                    class="flex flex-col items-left space-y-2 text-justify list-disc list-outside"
                 >
                     <p
                         v-for="(desc, i) in [
-                            '&#8227; To Connect Public & Police.',
-                            '&#8227; Collaborate with Public and a Police to bring Stronger Social Justice in our Judiciary.',
-                            `&#8227; Creating continued awareness in public to prevent crime.`,
-                            `&#8227; Help police department to trace culprits with the support from our volunteers.`,
-                            `&#8227; Help police department to trace culprits with the support from our volunteers.`,
+                            'To Connect Public & Police.',
+                            'Collaborate with Public and a Police to bring Stronger Social Justice in our Judiciary.',
+                            `Creating continued awareness in public to prevent crime.`,
+                            `Help police department to trace culprits with the support from our volunteers.`,
+                            `Help police department to trace culprits with the support from our volunteers.`,
                         ]"
                         :key="`desc${i}`"
                         class="text-base text-md"
                     >
-                        <i class="fi fi-rr-angle-small-right">{{ desc }}</i>
+                        <i class="italic">{{ desc }}</i>
                     </p>
                 </ul>
             </div>
@@ -138,13 +138,13 @@
                 <CardList
                     title="Our Aims and Objectives"
                     :description="[
-                        `✓ Social interaction among members or volunteers of the association.`,
-                        `✓ Conduct awareness sessions to the public.`,
-                        `✓ Conduct training programs to members of the association.`,
-                        `✓ Reach out to police services on time.`,
-                        `✓ Provide required help and assistance to victims to relieve them from the state of shock and help police nab the culprits and perpetrators.`,
-                        `✓ Make communities and public to be aware of police duties and functions including but not limited to the addressal of core issues such as domestic violence, child abuse, protection and rights, youth issues and problems, legal awareness, fire prevention measures and several other fire prevention measures.`,
-                        `✓ Build trust and confidence in police by the public.`,
+                        `Social interaction among members or volunteers of the association.`,
+                        `Conduct awareness sessions to the public.`,
+                        `Conduct training programs to members of the association.`,
+                        `Reach out to police services on time.`,
+                        `Provide required help and assistance to victims to relieve them from the state of shock and help police nab the culprits and perpetrators.`,
+                        `Make communities and public to be aware of police duties and functions including but not limited to the addressal of core issues such as domestic violence, child abuse, protection and rights, youth issues and problems, legal awareness, fire prevention measures and several other fire prevention measures.`,
+                        `Build trust and confidence in police by the public.`,
                     ]"
                 />
             </div>
@@ -167,24 +167,24 @@
                     class="mx-left"
                     title="Eligibility"
                     :description="[
-                        '&#10146; Volunteer should be 18 years of age or older.',
-                        '&#10146; Volunteer should not possess any crime report or civil convictions before.',
-                        '&#10146; Volunteer should be a citizen of India.',
-                        '&#10146; Volunteer must have consent from parent / guardian is required if they are a student.',
-                        '&#10146; Volunteer must have social responsibility and urge to contribute towards society.',
-                        '&#10146; Volunteer must carry an Indian Personal Identification such as Aadhar.',
+                        'Volunteer should be 18 years of age or older.',
+                        'Volunteer should not possess any crime report or civil convictions before.',
+                        'Volunteer should be a citizen of India.',
+                        'Volunteer must have consent from parent / guardian is required if they are a student.',
+                        'Volunteer must have social responsibility and urge to contribute towards society.',
+                        'Volunteer must carry an Indian Personal Identification such as Aadhar.',
                     ]"
                 />
                 <CardList
                     class="mx-left"
                     title="Perks"
                     :description="[
-                        '&#10146; Approval letter from government.',
-                        '&#10146; Uniform / Jacket from Police Public Connectors.',
-                        '&#10146; Police Public Connectors Volunteer identity card.',
-                        '&#10146; Official Police Public Connectors badge.',
-                        '&#10146; A supportive community.',
-                        '&#10146; Recognition and appreciation for exceptional volunteers.',
+                        'Approval letter from government.',
+                        'Uniform / Jacket from Police Public Connectors.',
+                        'Police Public Connectors Volunteer identity card.',
+                        'Official Police Public Connectors badge.',
+                        'A supportive community.',
+                        'Recognition and appreciation for exceptional volunteers.',
                     ]"
                 />
 
