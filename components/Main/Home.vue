@@ -83,7 +83,7 @@
                 <ul
                     class="flex flex-col items-left space-y-2 text-justify list-outside list-disc"
                 >
-                    <p
+                    <li
                         v-for="(desc, i) in [
                             'Build a Corruption and Bribery Free Society.',
                             'Build a New India with Peace & Prosperity.',
@@ -96,7 +96,7 @@
                         class="text-base"
                     >
                     <i class="italic">{{ desc }}</i>
-                    </p>
+                    </li>
                 </ul>
             </div>
             <div
@@ -109,7 +109,7 @@
                 <ul
                     class="flex flex-col items-left space-y-2 text-justify list-disc list-outside"
                 >
-                    <p
+                    <li
                         v-for="(desc, i) in [
                             'To Connect Public & Police.',
                             'Collaborate with Public and a Police to bring Stronger Social Justice in our Judiciary.',
@@ -121,7 +121,7 @@
                         class="text-base text-md"
                     >
                         <i class="italic">{{ desc }}</i>
-                    </p>
+                    </li>
                 </ul>
             </div>
         </div>
