@@ -108,6 +108,7 @@
         if (auth.status === 200) {
             message.value.content = "Complaint Successful";
             message.value.type = "success";
+            complaintForm.value.reset()
         } else return anErrorOccured("Invalid credentials | உங்கள் புகாரை பதிவு செய்ய முடியவில்லை");
     }
     function anErrorOccured(msg: string) {

@@ -351,8 +351,9 @@
             body: JSON.stringify(accountInfo),
         });
         if (auth.status === 200) {
-            message.value.content = "Application Successfull";
+            message.value.content = "Application Successfull. Check your email for a confirmation link.";
             message.value.type = "success";
+            loginForm.value.reset()
         } else return anErrorOccured("Invalid credentials.");
     }
     function anErrorOccured(msg: string) {
