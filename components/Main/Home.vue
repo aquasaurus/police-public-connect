@@ -81,7 +81,7 @@
                     have a great place for all of us to lead happy lives.</span
                 >
                 <ul
-                    class="flex flex-col items-left space-y-2 text-justify list-outside list-disc"
+                    class="flex flex-col items-left space-y-2 text-justify list-inside lg:list-outside list-disc"
                 >
                     <li
                         v-for="(desc, i) in [
@@ -107,7 +107,7 @@
                     To work under the guidance of police department and
                 </span>
                 <ul
-                    class="flex flex-col items-left space-y-2 text-justify list-disc list-outside"
+                    class="flex flex-col items-left space-y-2 text-justify list-disc list-inside lg:list-outside"
                 >
                     <li
                         v-for="(desc, i) in [
