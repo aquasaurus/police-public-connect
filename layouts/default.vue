@@ -78,7 +78,7 @@ const Navigation = [
   },
   {
     name: 'Contact us',
-    route: '/Footer',
+    route: '/#contact',
     key: 'contact us',
   },
   {
