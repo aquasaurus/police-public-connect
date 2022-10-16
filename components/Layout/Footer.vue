@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-gray-800 shadow-md md:text-left">
+    <footer class="bg-zinc-800 shadow-md md:text-left">
         <LayoutPreFooter />
         <ul
             class="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center max-w-8xl mx-auto py-4 px-4 lg:px-8 text-sm text-white"

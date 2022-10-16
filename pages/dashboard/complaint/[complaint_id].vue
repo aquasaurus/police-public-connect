@@ -77,7 +77,7 @@
                                 <span
                                     class="font-semibold text-base uppercase"
                                     >{{ comment.comment_user?.user_name }}</span
-                                ><span class="text-gray-400 text-sm">{{
+                                ><span class="text-zinc-400 text-sm">{{
                                     comment.comment_created
                                         .toISOString()
                                         .split("T")
@@ -91,7 +91,7 @@
                         <div class="p-2">
                             <input
                                 type="text"
-                                class="p-2 text-sm bg-gray-600 border border-blue-400"
+                                class="p-2 text-sm bg-zinc-800 border border-blue-400"
                                 v-model="enteringComment"
                                 placeholder="Add comment"
                             />

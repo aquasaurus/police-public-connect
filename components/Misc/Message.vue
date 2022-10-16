@@ -9,8 +9,8 @@
         ? 'bg-yellow-200 text-yellow-800 border-l-2 border-yellow-800'
         : type === 'error'
         ? 'bg-red-200 text-red-800 border-l-2 border-red-800'
-        : type === 'gray'
-        ? 'bg-gray-200 text-gray-800 border-l-2 border-gray-800'
+        : type === 'zinc'
+        ? 'bg-zinc-200 text-zinc-800 border-l-2 border-zinc-800'
         : 'bg-purple-300 text-purple-800 border-l-2 border-purple-800'
     }`"
   >

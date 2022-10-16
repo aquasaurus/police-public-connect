@@ -1,6 +1,6 @@
 <template>
     <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-2 flex-1 bg-gray-800 max-w-8xl mx-auto py-4"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-2 flex-1 bg-zinc-800 max-w-8xl mx-auto py-4"
     >
         <div class = "text-white col-span-2 text-sm mr-auto px-2 text-justify">
             <small class="text-yellow-400">

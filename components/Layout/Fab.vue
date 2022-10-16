@@ -14,7 +14,7 @@
               :href="navItem.action"
             >
               <li
-                :class="`rounded-full relative flex group items-center p-4 w-16 h-16 bg-gray-600`"
+                :class="`rounded-full relative flex group items-center p-4 w-16 h-16 bg-zinc-800`"
               >
                 <div
                   :class="`px-auto flex items-center mx-auto stroke-white stroke-2`"
@@ -48,7 +48,7 @@
 
       <div
         id="fabButton"
-        :class="`rounded-full bg-gray-500 flex items-center w-16 h-16 z-50`"
+        :class="`rounded-full bg-zinc-500 flex items-center w-16 h-16 z-50`"
       >
         <button
           :class="`p-4 transform transition duration-500 ease-in-out mx-auto block ${
@@ -77,7 +77,7 @@
       </div>
     </div>
     <div
-      :class="`inset-0 w-full fixed h-full z-30 block bg-gray-800 bg-opacity-30 ${
+      :class="`inset-0 w-full fixed h-full z-30 block bg-zinc-800 bg-opacity-30 ${
         toggleNav ? `visible` : `invisible`
       }`"
       @click="toggleOff"

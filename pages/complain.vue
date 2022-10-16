@@ -16,7 +16,7 @@
                 name="complaint_name"
                 id="complaint_name"
                 placeholder="உங்கள் பெயர்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -31,7 +31,7 @@
                 pattern="^(?:\+91)?[0-9]{10}$"
                 title="Phone number should be a ten-digit number"
                 placeholder="உங்கள் மொபைல் எண்"
-                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="required p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -46,7 +46,7 @@
                 pattern="^(?:\+91)?[0-9]{10}$"
                 title="Phone number should be a ten-digit number"
                 placeholder="உங்கள் மொபைல் எண்"
-                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="required p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -58,7 +58,7 @@
                 id="complaint_content"
                 name="complaint_content"
                 placeholder="உங்கள் புகாரை விவரிக்கவும்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
         </div>
@@ -87,10 +87,12 @@
         e.preventDefault();
         const formData = new FormData(complaintForm.value);
         const complaintInfo = {
-            complaint_content: formData.get("complaint_content"),
-            complaint_name: formData.get("complaint_name"),
-            complaint_phone: formData.get("complaint_phone"),
-            complaint_phone_confirm: formData.get("complaint_phone_confirm"),
+            complaint_content: formData.get("complaint_content") as string,
+            complaint_name: formData.get("complaint_name") as string,
+            complaint_phone: formData.get("complaint_phone") as string,
+            complaint_phone_confirm: formData.get(
+                "complaint_phone_confirm"
+            ) as string,
         };
         if (Array.from(formData.values()).some((x) => !x))
             return anErrorOccured(
@@ -100,7 +102,13 @@
             complaintInfo.complaint_phone !==
             complaintInfo.complaint_phone_confirm
         )
-            return anErrorOccured("Phone numbers do not match | மொபைல் எண் சரிபார்க்கவும்");
+            return anErrorOccured(
+                "Phone numbers do not match | மொபைல் எண் சரிபார்க்கவும்"
+            );
+        if (complaintInfo.complaint_phone.length !== 10)
+            return anErrorOccured(
+                "Phone numbers is invalid | மொபைல் எண் சரிபார்க்கவும்"
+            );
         const auth = await fetch("https://api.policepublic.in/complaints/new", {
             method: "POST",
             body: JSON.stringify(complaintInfo),
@@ -108,8 +116,11 @@
         if (auth.status === 200) {
             message.value.content = "Complaint Successful";
             message.value.type = "success";
-            complaintForm.value.reset()
-        } else return anErrorOccured("Invalid credentials | உங்கள் புகாரை பதிவு செய்ய முடியவில்லை");
+            complaintForm.value.reset();
+        } else
+            return anErrorOccured(
+                "Invalid credentials | உங்கள் புகாரை பதிவு செய்ய முடியவில்லை"
+            );
     }
     function anErrorOccured(msg: string) {
         message.value.content = msg;

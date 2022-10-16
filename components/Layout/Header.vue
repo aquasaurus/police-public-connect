@@ -1,6 +1,6 @@
 <template>
     <header
-        :class="`flex flex-row w-full lg:sticky top-0 z-50 relative bg-gray-800`"
+        :class="`flex flex-row w-full lg:sticky top-0 z-50 relative bg-zinc-800`"
     >
         <div :class="`flex flex-row w-full items-center p-4 justify-between`">
             <div :class="`flex flex-row items-center justify-center lg:hidden`">
@@ -62,7 +62,7 @@
             <div
                 :class="`flex flex-col lg:flex-row transition duration-500 ease-in-out transform absolute lg:static top-16 left-0 ${
                     navOpen ? `-translate-x-0` : `-translate-x-140`
-                } space-y-4 lg:space-y-0 lg:space-x-4 lg:items-center lg:justify-between text-base lg:translate-x-0 lg:max-w-8xl w-full text-white uppercase font-semibold lg:mx-auto bg-gray-800 py-8 lg:py-2 px-8 lg:px-1 min-h-screen lg:min-h-0 overflow-y-auto`"
+                } space-y-4 lg:space-y-0 lg:space-x-4 lg:items-center lg:justify-between text-base lg:translate-x-0 lg:max-w-8xl w-full text-white uppercase font-semibold lg:mx-auto bg-zinc-800 py-8 lg:py-2 px-8 lg:px-1 min-h-screen lg:min-h-0 overflow-y-auto`"
             >
                 <div
                     class="flex flex-col lg:flex-row items-center gap-2 justify-start"

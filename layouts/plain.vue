@@ -6,7 +6,7 @@
         font-[Poppins]
         text-lg
         tracking-wide
-        text-gray-900
+        text-zinc-900
         bg-white
       "
     >

@@ -7,9 +7,9 @@
                         ? `border-red-500`
                         : complaintInfo.complaint_status === 2
                         ? `border-amber-300`
-                        : `border-gray-900`
+                        : `border-zinc-900`
                 } px-4 py-6 justify-between cursor-pointer`"
-                @click="() => {pleaseLog(complaintInfo.complaint_created); complaintOpen = !complaintOpen}"
+                @click="() => {complaintOpen = !complaintOpen}"
             >
                 <span>#{{ complaintInfo.complaint_id }}</span>
                 <span>{{
@@ -21,7 +21,7 @@
                     :class="`stroke-2 stroke-white transition duration-500 ease-in-out transform ${
                         complaintOpen ? `rotate-180` : `rotate-0`
                     }`"
-                    @click="() => (complaintOpen = !complaintOpen)"
+                   
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

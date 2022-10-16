@@ -7,7 +7,7 @@
       text-lg
       tracking-wide
       break-words
-      text-gray-900
+      text-zinc-900
       bg-white
     "
   >

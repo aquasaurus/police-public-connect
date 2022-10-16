@@ -16,7 +16,7 @@
                 name="user_name"
                 id="user_name"
                 placeholder="பெயர்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -30,7 +30,7 @@
                 name="user_email"
                 id="user_email"
                 placeholder="மின்னஞ்சல்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -46,7 +46,7 @@
                 pattern="^(?:\+91)?[0-9]{10}$"
                 title="Phone number should be a ten-digit number"
                 placeholder="தொலைபேசி எண்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -60,7 +60,7 @@
                 name="user_dob"
                 id="user_dob"
                 placeholder="பிறந்த தேதி"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -74,7 +74,7 @@
                 name="user_bloodgroup"
                 id="user_bloodgroup"
                 placeholder="இரத்த வகை"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -88,7 +88,7 @@
                 name="user_address"
                 id="user_address"
                 placeholder="முகவரி"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -102,7 +102,7 @@
                 name="user_city"
                 id="user_city"
                 placeholder="நகரம்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -116,7 +116,7 @@
                 name="user_pincode"
                 id="user_pincode"
                 placeholder="அஞ்சல் குறியீடு"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -130,7 +130,7 @@
                 name="user_aadhar"
                 id="user_aadhar"
                 placeholder="ஆதார் எண்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -144,7 +144,7 @@
                 name="user_father_name"
                 id="user_father_name"
                 placeholder="தந்தையின் பெயர்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -158,7 +158,7 @@
                 name="user_mother_name"
                 id="user_mother_name"
                 placeholder="தாய் பெயர்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -172,7 +172,7 @@
                 name="user_parent_phone"
                 id="user_parent_phone"
                 placeholder="பெற்றோர் தொலைபேசி எண்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -185,7 +185,7 @@
                 name="user_password"
                 id="user_password"
                 placeholder="கடவுச்சொல்"
-                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="required p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -198,21 +198,20 @@
                 name="confirm_password"
                 id="confirm_password"
                 placeholder="கடவுச்சொல்"
-                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="required p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
                 for="user_health"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"
-                >Any Health issues</label
+                >Any Health issues?</label
             >
             <input
                 type="checkbox"
                 name="user_health"
                 id="user_health"
                 placeholder=""
-                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
-                
+                class="required p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
             />
             <label
                 for="user_health_desc"
@@ -224,20 +223,19 @@
                 name="user_health_desc"
                 id="user_health_desc"
                 placeholder="Leave empty if none"
-                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="required p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
             />
             <label
                 for="user_experience"
                 class="font-semibold text-base uppercase text-center lg:text-left w-full"
-                >Any Past Volunteering Experience</label
+                >Any Past Volunteering Experience?</label
             >
             <input
                 type="checkbox"
                 name="user_experience"
                 id="user_experience"
                 placeholder=""
-                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
-    
+                class="required p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
             />
             <label
                 for="user_experience_desc"
@@ -249,36 +247,42 @@
                 name="user_experience_desc"
                 id="user_experience_desc"
                 placeholder="Leave empty if none"
-                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="required p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
             />
-            
         </div>
-        <label
+        <div class="flex flex-row-reverse gap-2 items-center">
+            <label
                 for="user_agree_to_terms"
-                class="font-semibold text-base text-red-600 uppercase text-center lg:text-left w-full"
-                >I hereby declare that information provided by me is correct to my fullest knowledge</label
+                class="font-semibold text-sm text-red-600 uppercase text-center lg:text-left w-full"
+                >I hereby declare that information provided by me is correct to
+                my fullest knowledge</label
             >
             <input
                 type="checkbox"
                 name="user_dummy"
                 id="user_agree_to_terms"
                 placeholder=""
-                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="required p-2 rounded-xl max-w-md border-zinc-400 focus:border-blue-400 border"
                 required
             />
+        </div>
+        <div class="flex flex-row-reverse gap-2 items-center">
             <label
                 for="user_agree_to_terms"
-                class="font-semibold text-base text-red-600 uppercase text-center lg:text-left w-full"
-                >I further agree and submit this form with the consent of my parents or guardian to carry out this social activity for the benefit of public.</label
+                class="font-semibold text-sm text-red-600 uppercase text-center lg:text-left w-full"
+                >I further agree and submit this form with the consent of my
+                parents or guardian to carry out this social activity for the
+                benefit of public.</label
             >
             <input
                 type="checkbox"
                 name="user_agree_to_terms"
                 id="user_agree_to_terms"
                 placeholder=""
-                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="required p-2 rounded-xl max-w-md border-zinc-400 focus:border-blue-400 border"
                 required
             />
+        </div>
         <MiscMessage
             :class="message.content ? `visible` : `invisible`"
             :type="message.type"
@@ -307,42 +311,48 @@
         e.preventDefault();
         const formData = new FormData(loginForm.value);
         const accountInfo = {
-            user_email: formData.get("user_email"),
-            user_password: formData.get("user_password"),
-            user_name: formData.get("user_name"),
-            user_phone: formData.get("user_phone"),
-            user_dob: formData.get("user_dob"),
-            user_sex: formData.get("user_sex"),
-            user_address: formData.get("user_address"),
-            user_city: formData.get("user_city"),
-            user_pincode: formData.get("user_pincode"),
-            user_aadhar: formData.get("user_aadhar"), 
-            user_experience: formData.get("user_experience"),//*
-            user_experience_desc: formData.get("user_experience_desc"), //*
-            user_agree_to_terms: formData.get("user_agree_to_terms"), //*
-            user_health: formData.get("user_health"),//*
-            user_health_desc: formData.get("user_health_desc"),//*
-            user_father_name: formData.get("user_father_name"),
-            user_mother_name: formData.get("user_mother_name"),
-            user_parent_phone: formData.get("user_parent_phone"),
+            user_email: formData.get("user_email") as string,
+            user_password: formData.get("user_password") as string,
+            user_name: formData.get("user_name") as string,
+            user_phone: formData.get("user_phone") as string,
+            user_dob: formData.get("user_dob") as string,
+            user_sex: formData.get("user_sex") as string,
+            user_address: formData.get("user_address") as string,
+            user_city: formData.get("user_city") as string,
+            user_pincode: formData.get("user_pincode") as string,
+            user_aadhar: formData.get("user_aadhar") as string,
+            user_experience: Boolean(formData.get("user_experience") as string), //*
+            user_experience_desc: formData.get("user_experience_desc") as string, //*
+            user_agree_to_terms: Boolean(formData.get("user_agree_to_terms") as string), //*
+            user_health: Boolean(formData.get("user_health") as string), //*
+            user_health_desc: formData.get("user_health_desc") as string, //*
+            user_father_name: formData.get("user_father_name") as string,
+            user_mother_name: formData.get("user_mother_name") as string,
+            user_parent_phone: formData.get("user_parent_phone") as string,
         };
-        if(accountInfo.user_password !== formData.get("confirm_password")) {
+        if (accountInfo.user_password !== formData.get("confirm_password")) {
             return anErrorOccured("Passwords don't match");
         }
-        if((accountInfo.user_aadhar as string).length !== 12) {
+        if ((accountInfo.user_aadhar as string).length !== 12) {
             return anErrorOccured("Invalid aadhar number");
         }
-        if((accountInfo.user_phone as string).length !== 10) {
+        if ((accountInfo.user_phone as string).length !== 10) {
             return anErrorOccured("Invalid mobile number");
         }
-        if(accountInfo.user_experience && !accountInfo.user_experience_desc) {
+        if ((accountInfo.user_phone as string).length !== 10) {
+            return anErrorOccured("Invalid mobile number");
+        }
+        if (accountInfo.user_experience && !accountInfo.user_experience_desc) {
             return anErrorOccured("Please describe your previous experience.");
         }
-        if(accountInfo.user_health && !accountInfo.user_health_desc) {
+        if (accountInfo.user_health && !accountInfo.user_health_desc) {
             return anErrorOccured("Please describe your health issues.");
         }
+        if ((Date.now() - new Date(accountInfo.user_dob).getTime()) < 568_036_800_000) {
+            return anErrorOccured("You need to be above 18 years of age.");
+        }
 
-/*        if (Array.from(formData.values()).some((x) => !x))
+        /*        if (Array.from(formData.values()).some((x) => !x))
             return anErrorOccured(
                 "Please check whether all data has been entered properly."
             );*/
@@ -351,9 +361,10 @@
             body: JSON.stringify(accountInfo),
         });
         if (auth.status === 200) {
-            message.value.content = "Application Successfull. Check your email for a confirmation link.";
+            message.value.content =
+                "Application Successfull. Check your email for a confirmation link.";
             message.value.type = "success";
-            loginForm.value.reset()
+            loginForm.value.reset();
         } else return anErrorOccured("Invalid credentials.");
     }
     function anErrorOccured(msg: string) {

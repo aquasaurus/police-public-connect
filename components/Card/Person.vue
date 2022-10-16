@@ -9,7 +9,7 @@
           flex flex-col
           items-center
           justify-center
-          border-dotted border-gray-400 border-4
+          border-dotted border-zinc-400 border-4
           rounded-full
         "
       >
@@ -21,7 +21,7 @@
             w-72
             h-72
             rounded-full
-            border-gray-400 border-4 border-double
+            border-zinc-400 border-4 border-double
           "
         />
       </div>
@@ -35,9 +35,9 @@
       }`"
     >
       <p class="text-3xl font-semibold">{{ news.title }}</p>
-      <span class="text-gray-400 text-base uppercase">{{ news.subtitle }}</span>
+      <span class="text-zinc-400 text-base uppercase">{{ news.subtitle }}</span>
 
-      <div class="text-sm text-gray-800 dark:text-white">
+      <div class="text-sm text-zinc-800 dark:text-white">
         {{ news.description }}
       </div>
     </div>

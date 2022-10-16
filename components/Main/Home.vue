@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-col space-y-36">
+    <div class="flex flex-col space-y-24">
         <div
-            class="bg-gray-800 somebg relative -top-20 text-white min-h-screen overflow-hidden"
+            class="bg-zinc-800 somebg relative -top-20 text-white min-h-screen h-[60rem] lg:h-full overflow-hidden"
         >
             <img
                 src="/collage.jpg"
@@ -15,18 +15,22 @@
                 data-aos-delay="100"
                 data-aos-duration="260"
             >
-                <div class="order-1 min-h-[20rem] lg:min-h-auto lg:order-2">
+                <div
+                    class="order-1 min-h-[20rem] lg:min-h-auto lg:order-2 flex flex-col justify-center"
+                >
                     <div class="flex items-start font-semibold">
                         <span
-                            class="text-4xl max-w-2xl lg:text-7xl break-words text-center lg:text-left"
+                            class="text-4xl max-w-2xl lg:text-5xl break-words text-center lg:text-left"
                             >{{ current[0] }}</span
                         >
                     </div>
                 </div>
-                <div class="mt-3 order-2 lg:order-1 flex flex-col space-y-4">
+                <div
+                    class="mt-3 order-2 lg:order-1 flex flex-col justify-center space-y-4"
+                >
                     <a
                         href="/apply"
-                        class="bg-blue-500 font-semibold rounded-xl text-lg text-center p-2 w-72 transition duration-500 ease-in-out transform hover:-translate-y-1"
+                        class="bg-blue-600 font-semibold rounded-xl text-lg text-center p-2 w-72 transition duration-500 ease-in-out transform hover:-translate-y-1"
                     >
                         JOIN AS VOLUNTEER
                     </a>
@@ -73,7 +77,7 @@
             data-aos-duration="260"
         >
             <div
-                class="bg-gray-600 rounded-xl text-center lg:text-right p-2 lg:p-8 flex flex-col space-y-8 transition duration-500 ease-in-out transform hover:-translate-y-1 lg:hover:scale-110"
+                class="bg-zinc-800 rounded-xl text-center lg:text-right p-2 lg:p-8 flex flex-col space-y-8 transition duration-500 ease-in-out transform hover:-translate-y-1 lg:hover:scale-110"
             >
                 <span class="text-3xl text-red-400 font-semibold">Vision</span>
                 <span class="text-justify"
@@ -95,12 +99,12 @@
                         :key="`desc${i}`"
                         class="text-base"
                     >
-                    <i class="italic">{{ desc }}</i>
+                        <i class="italic">{{ desc }}</i>
                     </li>
                 </ul>
             </div>
             <div
-                class="bg-gray-600 rounded-xl text-center lg:text-left p-2 lg:p-8 flex flex-col space-y-8 transition duration-500 ease-in-out transform hover:-translate-y-1 lg:hover:scale-110"
+                class="bg-zinc-800 rounded-xl text-center lg:text-left p-2 lg:p-8 flex flex-col space-y-8 transition duration-500 ease-in-out transform hover:-translate-y-1 lg:hover:scale-110"
             >
                 <span class="text-3xl text-red-400 font-semibold">Mission</span>
                 <span class="text-justify">
@@ -149,7 +153,7 @@
                 />
             </div>
         </div>
-        <div class="bg-gray-700 text-white">
+        <div class="bg-zinc-800 text-white">
             <div
                 id="volunteer"
                 class="flex flex-col space-y-4 text-base px-2 lg:px-12 max-w-7xl mx-auto py-12"
@@ -160,7 +164,10 @@
                     Volunteers
                 </div>
                 <span class="text-justify py-12">
-                    Police Public Connectors is an initiative to work closely with the colleges in Chennai for the students to participate as volunteers in our association to expand our services to assist the Department of Police.</span
+                    Police Public Connectors is an initiative to work closely
+                    with the colleges in Chennai for the students to participate
+                    as volunteers in our association to expand our services to
+                    assist the Department of Police.</span
                 >
 
                 <CardList
@@ -191,7 +198,7 @@
                 <div class="py-4 space-y-4">
                     <a
                         href="/apply"
-                        class="block mx-auto bg-blue-500 font-semibold rounded-xl text-lg text-center p-2 w-72 transition duration-500 ease-in-out transform hover:-translate-y-1"
+                        class="block mx-auto bg-red-600 font-semibold rounded-xl text-lg text-center p-2 w-72 transition duration-500 ease-in-out transform hover:-translate-y-1"
                     >
                         JOIN AS VOLUNTEER
                     </a>
@@ -245,7 +252,7 @@
             id="report-btn"
             class="max-w-7xl w-full mx-auto flex flex-col space-y-4 justify-between"
         >
-            <MiscMessage type="gray"
+            <MiscMessage type="zinc"
                 >Click the button below in order to file a complaint. Volunteers
                 will be notified and will act accordingly.</MiscMessage
             >
@@ -259,7 +266,10 @@
 
         <div class="h-[1rem]" />
     </div>
-    <div class="text-4xl font-semibold mx-auto text-center text-black">
+    <div
+        id="contact"
+        class="text-4xl font-semibold mx-auto text-center text-black"
+    >
         CONTACT US
     </div>
     <div
@@ -307,16 +317,16 @@
     });
 
     const typer = [
-        "Help win against drugs",
-        "Help Communities come closer and harmonise!!",
-        "Collaborate with Public and Police to bring stronger Social Justice in our Judiciary!!",
-        "Build a Corruption and Bribery free Society!!",
-        "Build a great place to live by all Communities!!",
-        "Build a new India with Peace & Prosperity!!",
-        "Women safety and Girl protection are our highest priority !!",
-        "Be responsible to build future India!!",
-        "Own, Protect, Help and be part of resolve to enable our Societies to flourish!!",
-        "Be proud that we are part of this great initiative!!",
+        "Help fight against drugs.",
+        "Help communities come closer and harmonise.",
+        "Collaborate with public and police to bring stronger social justice.",
+        "Build a corruption-free and bribary-free society.",
+        "Build a great place to live by all communities.",
+        "Build a new India with peace & prosperity.",
+        "Women safety and protection are our highest priority.",
+        "Be responsible to build future India.",
+        "Own, protect, help and be part of resolve to enable our society to flourish.",
+        "Be proud that we are part of this great initiative.",
     ];
     const current = ref(["", "", 0]);
 

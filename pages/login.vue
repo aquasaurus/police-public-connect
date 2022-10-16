@@ -16,7 +16,7 @@
                 name="user_email"
                 id="user_email"
                 placeholder="மின்னஞ்சல்"
-                class="p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
             <label
@@ -29,7 +29,7 @@
                 name="user_password"
                 id="user_password"
                 placeholder="கடவுச்சொல்"
-                class="required p-2 rounded-xl max-w-md w-full border-gray-400 focus:border-blue-400 border"
+                class="required p-2 rounded-xl max-w-md w-full border-zinc-400 focus:border-blue-400 border"
                 required
             />
         </div>
