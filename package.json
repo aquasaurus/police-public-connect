@@ -15,7 +15,6 @@
     "pinia": "^2.0.23"
   },
   "dependencies": {
-    "@flaticon/flaticon-uicons": "^1.7.0",
     "@nekooftheabyss/lala": "^3.1.4",
     "aos": "^2.3.4"
   }
