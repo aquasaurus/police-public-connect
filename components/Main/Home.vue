@@ -79,8 +79,8 @@
             <div
                 class="bg-zinc-800 rounded-xl text-center lg:text-right p-2 lg:p-8 flex flex-col space-y-8 transition duration-500 ease-in-out transform hover:-translate-y-1 lg:hover:scale-110"
             >
-                <span class="text-3xl text-red-400 font-semibold">Vision</span>
-                <span class="text-justify"
+                <span class="text-xl lg:text-3xl text-red-400 font-semibold">Vision</span>
+                <span class="text-sm lg:text-base text-justify"
                     >To build a crime free society for India to flourish and
                     have a great place for all of us to lead happy lives.</span
                 >
@@ -106,8 +106,8 @@
             <div
                 class="bg-zinc-800 rounded-xl text-center lg:text-left p-2 lg:p-8 flex flex-col space-y-8 transition duration-500 ease-in-out transform hover:-translate-y-1 lg:hover:scale-110"
             >
-                <span class="text-3xl text-red-400 font-semibold">Mission</span>
-                <span class="text-justify">
+                <span class="text-xl lg:text-3xl text-red-400 font-semibold">Mission</span>
+                <span class="text-sm lg:text-base text-justify">
                     To work under the guidance of police department and
                 </span>
                 <ul
