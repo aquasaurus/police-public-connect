@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div :class="`fixed p-4 bottom-0 right-0 flex flex-col items-center z-40`">
+    <div :class="`fixed p-4 bottom-0 right-0 flex flex-col items-center z-40 ${toggleNav ? `pointer-events-auto` : `pointer-events-none`}`">
       <div
         id="fabItems"
         :class="`transform transition-all duration-500 ease-in-out mb-7 ${
@@ -51,7 +51,7 @@
         :class="`rounded-full bg-zinc-500 flex items-center w-16 h-16 z-50`"
       >
         <button
-          :class="`p-4 transform transition duration-500 ease-in-out mx-auto block ${
+          :class="`p-4 transform transition duration-500 ease-in-out mx-auto block pointer-events-auto ${
             toggleNav ? `rotate-90` : ``
           }`"
           @click="toggleBoth"
