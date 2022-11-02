@@ -97,7 +97,7 @@
                             'Own, Protect, Help and Be Part of Resolve to Enable our societies to Flourish.',
                         ]"
                         :key="`desc${i}`"
-                        class="text-base"
+                        class="text-sm"
                     >
                         <i class="italic">{{ desc }}</i>
                     </li>
@@ -122,7 +122,7 @@
                             `Help police department to trace culprits with the support from our volunteers.`,
                         ]"
                         :key="`desc${i}`"
-                        class="text-base text-md"
+                        class="text-sm"
                     >
                         <i class="italic">{{ desc }}</i>
                     </li>

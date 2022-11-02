@@ -10,7 +10,7 @@
             >
             <small class = "ml-auto text-red-300"
                 >Developed by Students of Artificial Intelligence and Data
-                Science,<br>Easwari Engineering College.</small
+                Science department,<br>Easwari Engineering College,Ramapuram,Chennai</small
             >
         </ul>
     </footer>
